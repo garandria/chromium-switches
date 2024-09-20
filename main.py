@@ -4,7 +4,7 @@ from tree_sitter import Language, Parser
 
 
 CPP_LANGUAGE = Language(tscpp.language())
-QUERY = """
+QUERY_SIMPLE = """
 (
   (namespace_definition
     name: [(namespace_identifier)
@@ -17,6 +17,28 @@ QUERY = """
             declarator: (identifier) @name)
           value: (string_literal) @value
         ))
+      (#eq? @type "char")
+    )
+  )
+  (#match? @namespace_name ".*switch.*")
+)
+"""
+QUERY_PREPROC = """
+(
+  (namespace_definition
+    name: [(namespace_identifier)
+    	   (nested_namespace_specifier)] @namespace_name
+    body: (declaration_list
+    ((preproc_if
+    	condition: [(call_expression) (binary_expression)] @cond
+        _
+      (declaration
+        type: (primitive_type) @type
+        declarator: (init_declarator
+          declarator: (array_declarator
+            declarator: (identifier) @name)
+          value: (string_literal) @value
+        ))))
       (#eq? @type "char")
     )
   )
