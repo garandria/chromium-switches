@@ -61,16 +61,17 @@ def main():
     src = sys.argv[1]
     code = file2bytes(src)
     tree = parser.parse(code)
-    for elt in matches_simple:
-        content = get_code(code, elt[1]['value'][0])
-        print(f"{content},")
-    for elt in matches_preproc:
-        content = get_code(code, elt[1]['value'][0])
-        cond = get_code(code, elt[1]['cond'][0])
-        print(f"{content},{cond}")
     query = CPP_LANGUAGE.query(QUERY)
     matches = query.matches(tree.root_node)
     switches = dict()
+    for c, m in matches:
+        switch = get_code(code, m['value'][0]).strip('"')
+        switches[switch] = {'preproc': '', 'location': src, 'description': ''}
+        if c == 1:
+            cond = get_code(code, m['cond'][0]).replace('\\\n', '')
+            switches[switch]['preproc'] = cond
+    for k, v in switches.items():
+        print(f"--{k},{v['preproc']},{v['location']}")
 
 
 if __name__ == "__main__":
