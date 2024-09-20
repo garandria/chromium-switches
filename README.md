@@ -1,5 +1,5 @@
-| switch | preproc | location |
-| -------| ------- | -------- |
+| switch | variable |preproc | location |
+| -------| -------- |------- | -------- |
 |--/prefetch:5|kPrefetchArgumentBrowserBackground|BUILDFLAG(IS_WIN)|../chromium/src/chrome/common/chrome_switches.cc|
 |--0|kIntensiveWakeUpThrottlingPolicy_ForceDisable||../chromium/src/third_party/blink/common/switches.cc|
 |--0|kVerboseLoggingInNaclChoiceDisabled||../chromium/src/components/nacl/common/nacl_switches.cc|
