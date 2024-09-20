@@ -69,12 +69,13 @@ def main():
         variable = get_code(code, m['name'][0])
         switches[switch] = {'preproc': '',
                             'location': src,
-                            'description': ''}
+                            'description': '',
+                            'variable': variable}
         if c == 1:
             cond = get_code(code, m['cond'][0]).replace('\\\n', '')
             switches[switch]['preproc'] = cond
     for k, v in switches.items():
-        print(f"--{k},{v['preproc']},{v['location']}")
+        print(f"--{k},{v['variable']},{v['preproc']},{v['location']}")
 
 
 if __name__ == "__main__":
