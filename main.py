@@ -66,7 +66,10 @@ def main():
     switches = dict()
     for c, m in matches:
         switch = get_code(code, m['value'][0]).strip('"')
-        switches[switch] = {'preproc': '', 'location': src, 'description': ''}
+        variable = get_code(code, m['name'][0])
+        switches[switch] = {'preproc': '',
+                            'location': src,
+                            'description': ''}
         if c == 1:
             cond = get_code(code, m['cond'][0]).replace('\\\n', '')
             switches[switch]['preproc'] = cond
