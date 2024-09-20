@@ -7,7 +7,8 @@ CPP_LANGUAGE = Language(tscpp.language())
 QUERY = """
 (
   (namespace_definition
-    name: (_) @namespace_name ;; namespace_identifier || nested_namespace_specifier
+    name: [(namespace_identifier)
+    	   (nested_namespace_specifier)] @namespace_name
     body: (declaration_list
       (declaration
         type: (primitive_type) @type
