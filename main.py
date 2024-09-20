@@ -59,12 +59,20 @@ def get_code(source, node):
 
 def main():
     parser = Parser(CPP_LANGUAGE)
-    code = file2bytes(sys.argv[1])
-    query = CPP_LANGUAGE.query(QUERY)
+    src = sys.argv[1]
+    code = file2bytes(src)
     tree = parser.parse(code)
-    matches = query.matches(tree.root_node)
-    for elt in matches:
-        print(get_code(code, elt[1]["value"][0]))
+    query_simple = CPP_LANGUAGE.query(QUERY_SIMPLE)
+    matches_simple = query_simple.matches(tree.root_node)
+    query_prepro = CPP_LANGUAGE.query(QUERY_PREPROC)
+    matches_preproc = query_prepro.matches(tree.root_node)
+    for elt in matches_simple:
+        content = get_code(code, elt[1]['value'][0])
+        print(f"{content},")
+    for elt in matches_preproc:
+        content = get_code(code, elt[1]['value'][0])
+        cond = get_code(code, elt[1]['cond'][0])
+        print(f"{content},{cond}")
 
 
 if __name__ == "__main__":
