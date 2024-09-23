@@ -1,5 +1,3 @@
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --webview-log-js-console-messages |  | kWebViewLogJsConsoleMessages |  | ../chromium/src/android_webview/common/aw_switches.cc |
 | --webview-sandboxed-renderer |  | kWebViewSandboxedRenderer |  | ../chromium/src/android_webview/common/aw_switches.cc |
 | --webview-disable-safebrowsing-support |  used to disable safebrowsing functionality in webview | kWebViewDisableSafebrowsingSupport |  | ../chromium/src/android_webview/common/aw_switches.cc |
@@ -24,12 +22,6 @@
 | --webview-use-separate-resource-context |  Use WebView's context for resource lookups instead of the embedding app's. | kWebViewUseSeparateResourceContext |  | ../chromium/src/android_webview/common/aw_switches.cc |
 | --debug-bsa |  Override and enable features useful for BSA library testing/debugging. | kDebugBsa |  | ../chromium/src/android_webview/common/aw_switches.cc |
 | --webview-intercepted-cookie-header |  When enabled, the cookie header will be included in the request headers  for shouldInterceptRequest. | kWebViewInterceptedCookieHeader |  | ../chromium/src/android_webview/common/aw_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --aggressive-cache-discard |  Please keep the order of these switches synchronized with the header file  (i.e. in alphabetical order). | kAggressiveCacheDiscardThreshold |  | ../chromium/src/ash/constants/ash_switches.cc |
 | --allow-failed-policy-fetch-for-test |  If this flag is passed, failed policy fetches will not cause profile  initialization to fail. This is useful for tests because it means that  tests don't have to mock out the policy infrastructure. | kAllowFailedPolicyFetchForTest |  | ../chromium/src/ash/constants/ash_switches.cc |
 | --allow-os-install |  When this flag is set, the OS installation UI can be accessed. This  allows the user to install from USB to disk. | kAllowOsInstall |  | ../chromium/src/ash/constants/ash_switches.cc |
@@ -304,74 +296,8 @@
 | --prevent-kiosk-autolaunch-for-testing |  Prevent kiosk autolaunch for testing. | kPreventKioskAutolaunchForTesting |  | ../chromium/src/ash/constants/ash_switches.cc |
 | --ash-allow-default-shelf-pin-layout-ignoring-sync |  Allows the Ash shelf to apply the default pin layout without waiting for Sync  to download data from the server (which many tests can't achieve). | kAllowDefaultShelfPinLayoutIgnoringSync |  | ../chromium/src/ash/constants/ash_switches.cc |
 | --force-refresh-rate-throttle |  On devices that support refresh rate throttling, force the throttling  behavior to be active regardless of system state. | kForceRefreshRateThrottle |  | ../chromium/src/ash/constants/ash_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-virtual-keyboard |  | kEnableVirtualKeyboard |  | ../chromium/src/ash/public/cpp/keyboard/keyboard_switches.cc |
 | --disable-virtual-keyboard |  | kDisableVirtualKeyboard |  | ../chromium/src/ash/public/cpp/keyboard/keyboard_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-best-effort-tasks |  Delays execution of TaskPriority::BEST_EFFORT tasks until shutdown. | kDisableBestEffortTasks |  | ../chromium/src/base/base_switches.cc |
 | --disable-breakpad |  Disables the crash reporting. | kDisableBreakpad |  | ../chromium/src/base/base_switches.cc |
 | --disable-features |  Comma-separated list of feature names to disable. See also kEnableFeatures. | kDisableFeatures |  | ../chromium/src/base/base_switches.cc |
@@ -408,20 +334,10 @@
 | --package-name |  | kPackageName | BUILDFLAG(IS_ANDROID) | ../chromium/src/base/base_switches.cc |
 | --package-version-name |  | kPackageVersionName | BUILDFLAG(IS_ANDROID) | ../chromium/src/base/base_switches.cc |
 | --scheduler-boost-urgent |  Override the default scheduling boosting value for urgent tasks.  This can be adjusted if a specific chromeos device shows better perf/power  ratio (e.g. by running video conference tests).  Currently, this values directs to linux scheduler's utilization min clamp.  Range is 0(no biased load) ~ 100(mamximum load value). | kSchedulerBoostUrgent | BUILDFLAG(IS_CHROMEOS) | ../chromium/src/base/base_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --force-ui-direction |  Force the UI to a specific direction. Valid values are "ltr" (left-to-right)  and "rtl" (right-to-left). | kForceUIDirection |  | ../chromium/src/base/i18n/base_i18n_switches.cc |
 | --force-text-direction |  Force the text rendering to a specific direction. Valid values are "ltr"  (left-to-right) and "rtl" (right-to-left). Only tested meaningfully with  RTL. | kForceTextDirection |  | ../chromium/src/base/i18n/base_i18n_switches.cc |
 | --ltr |  | kForceDirectionLTR |  | ../chromium/src/base/i18n/base_i18n_switches.cc |
 | --rtl |  | kForceDirectionRTL |  | ../chromium/src/base/i18n/base_i18n_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-threaded-animation |  | kDisableThreadedAnimation |  | ../chromium/src/cc/base/switches.cc |
 | --disable-composited-antialiasing |  Disables layer-edge anti-aliasing in the compositor. | kDisableCompositedAntialiasing |  | ../chromium/src/cc/base/switches.cc |
 | --disable-main-frame-before-activation |  Disables sending the next BeginMainFrame before the previous commit  activates. Overrides the kEnableMainFrameBeforeActivation flag. | kDisableMainFrameBeforeActivation |  | ../chromium/src/cc/base/switches.cc |
@@ -456,115 +372,23 @@
 | --cc-layer-tree-test-no-timeout |  Prevents the layer tree unit tests from timing out. | kCCLayerTreeTestNoTimeout |  | ../chromium/src/cc/base/switches.cc |
 | --cc-layer-tree-test-long-timeout |  Increases timeout for memory checkers. | kCCLayerTreeTestLongTimeout |  | ../chromium/src/cc/base/switches.cc |
 | --cc-scroll-animation-duration-in-seconds |  Controls the duration of the scroll animation curve. | kCCScrollAnimationDurationForTesting |  | ../chromium/src/cc/base/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --custom-android-messages-domain |  | kCustomAndroidMessagesDomain |  | ../chromium/src/chrome/browser/ash/android_sms/android_sms_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --borealis-launch-options |  Allows passing a BorealisLaunchOptions string to the chrome process, which  will be stored in the kExtraLaunchOptions. For the format, see the  documentation in chrome/browser/ash/borealis/borealis_launch_options.h. | kLaunchOptions |  | ../chromium/src/chrome/browser/ash/borealis/borealis_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --heildphpnddilhkemkielfhnkaagiabh |  namespace | kLBSExtensionId |  | ../chromium/src/chrome/browser/browser_switcher/browser_switcher_policy_migrator.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --use-va-dev-keys |  | kUseVaDevKeys |  | ../chromium/src/chrome/browser/enterprise/connectors/device_trust/attestation/browser/attestation_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --simulate-update-hresult |  Simulates a specific HRESULT error code returned by the update check.  If the switch value is not specified (as hex) then it defaults to E_FAIL. | kSimulateUpdateHresult |  | ../chromium/src/chrome/browser/google/switches.cc |
 | --simulate-update-error-code |  Simulates a GoogleUpdateErrorCode error by the update check.  Must be supplied with |kSimulateUpdateHresult| switch. | kSimulateUpdateErrorCode |  | ../chromium/src/chrome/browser/google/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-ip-privacy-proxy |  | kDisableIpProtectionProxy |  | ../chromium/src/chrome/browser/ip_protection/ip_protection_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --nearby-share-certificate-validity-period-hours |  Overrides the default validity period for Nearby Share certificates. Value  must be larger than 0. | kNearbyShareCertificateValidityPeriodHours |  | ../chromium/src/chrome/browser/nearby_sharing/common/nearby_share_switches.cc |
 | --nearby-share-device-id |  Overrides the default device ID to provide a stable ID in test environments.  By default we generate a random 10-character string. | kNearbyShareDeviceID |  | ../chromium/src/chrome/browser/nearby_sharing/common/nearby_share_switches.cc |
 | --nearbysharing-http-host |  Overrides the default URL for Google APIs (https:www.googleapis.com) used  by Nearby Share | kNearbyShareHTTPHost |  | ../chromium/src/chrome/browser/nearby_sharing/common/nearby_share_switches.cc |
 | --nearby-share-num-private-certificates |  Overrides the default number of private certificates generated. Value must be  larger than 0. | kNearbyShareNumPrivateCertificates |  | ../chromium/src/chrome/browser/nearby_sharing/common/nearby_share_switches.cc |
 | --nearby-share-verbose-logging |  Enables verbose logging level for Nearby Share. | kNearbyShareVerboseLogging |  | ../chromium/src/chrome/browser/nearby_sharing/common/nearby_share_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --signed-out-ntp-modules |  | kSignedOutNtpModulesSwitch |  | ../chromium/src/chrome/browser/new_tab_page/modules/modules_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --loading-predictor-allow-local-request-for-testing |  Allows the loading predictor to do prefetches to local IP addresses. This is  needed for testing as such requests are blocked by default for security. | kLoadingPredictorAllowLocalRequestForTesting |  | ../chromium/src/chrome/browser/predictors/predictors_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --webauthn-remote-proxied-requests-allowed-additional-origin |  | kRemoteProxiedRequestsAllowedAdditionalOrigin |  | ../chromium/src/chrome/browser/webauthn/webauthn_switches.cc |
 | --webauthn-permit-enterprise-attestation |  | kPermitEnterpriseAttestationOriginList |  | ../chromium/src/chrome/browser/webauthn/webauthn_switches.cc |
 | --webauthn-gpm-pin-reset-reauth-url |  | kGpmPinResetReauthUrlSwitch |  | ../chromium/src/chrome/browser/webauthn/webauthn_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --accept-lang |  -----------------------------------------------------------------------------  Can't find the switch you are looking for? Try looking in:  ash/constants/ash_switches.cc  base/base_switches.cc  etc.   When commenting your switch, please use the same voice as surrounding  comments. Imagine "This switch..." at the beginning of the phrase, and it'll  all work out.  -----------------------------------------------------------------------------  Specifies Accept-Language to send to servers and expose to JavaScript via the  navigator.language DOM property. language[-country] where language is the 2  letter code from ISO-639. | kAcceptLang |  | ../chromium/src/chrome/common/chrome_switches.cc |
 | --allow-cross-origin-auth-prompt |  Allows third-party content included on a page to prompt for a HTTP basic  auth username/password pair. | kAllowCrossOriginAuthPrompt |  | ../chromium/src/chrome/common/chrome_switches.cc |
 | --allow-http-screen-capture |  Allow non-secure origins to use the screen capture API and the desktopCapture  extension API. | kAllowHttpScreenCapture |  | ../chromium/src/chrome/common/chrome_switches.cc |
@@ -778,13 +602,9 @@
 | --webapk-server-url |  Custom WebAPK server URL for the sake of testing. | kWebApkServerUrl | BUILDFLAG(IS_CHROMEOS_ASH) || BUILDFLAG(IS_ANDROID) | ../chromium/src/chrome/common/chrome_switches.cc |
 | --use-system-default-printer |  Uses the system default printer as the initially selected destination in  print preview, instead of the most recently used destination. | kUseSystemDefaultPrinter | !BUILDFLAG(IS_CHROMEOS_ASH) && !BUILDFLAG(IS_ANDROID) | ../chromium/src/chrome/common/chrome_switches.cc |
 | --user-data-migrated |  Indicates that this process is the product of a relaunch following migration  of User Data. | kUserDataMigrated | BUILDFLAG(ENABLE_DOWNGRADE_PROCESSING) | ../chromium/src/chrome/common/chrome_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --also-emit-success-logs |  Also emit full event trace logs for successful tests. | kAlsoEmitSuccessLogs |  | ../chromium/src/chrome/test/base/test_switches.cc |
 | --devtools-code-coverage |  Directory to output JavaScript code coverage. When supplied enables coverage  in selected browser tests. | kDevtoolsCodeCoverage |  | ../chromium/src/chrome/test/base/test_switches.cc |
 | --perf-test-print-uma-means |  Show the mean value of histograms that native performance tests  are monitoring. Note that this is only applicable for PerformanceTest  subclasses. | kPerfTestPrintUmaMeans |  | ../chromium/src/chrome/test/base/test_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --true |  Value indicating whether flag from command line switch is true. | kSwitchValueTrue |  | ../chromium/src/chromecast/base/chromecast_switches.cc |
 | --false |  Value indicating whether flag from command line switch is false. | kSwitchValueFalse |  | ../chromium/src/chromecast/base/chromecast_switches.cc |
 | --crash-server-url |  Server url to upload crash data to.  Default is "https:clients2.google.com/cr/report" for prod devices.  Default is "https:clients2.google.com/cr/staging_report" for non prod. | kCrashServerUrl |  | ../chromium/src/chromecast/base/chromecast_switches.cc |
@@ -845,32 +665,18 @@
 | --use-cast-browser-pref-config |  Rather than share a common pref config file with cast_service, use a  dedicated browser pref config file. This must be set when `cast_browser` is  running in a different process from `cast_service`. | kUseCastBrowserPrefConfig |  | ../chromium/src/chromecast/base/chromecast_switches.cc |
 | --in-process-broker |  Creates the service broker inside of this process. Only one process should  host the service broker. | kInProcessBroker |  | ../chromium/src/chromecast/base/chromecast_switches.cc |
 | --cast-mojo-broker-path |  Command-line arg to change the Unix domain socket path to connect to the  Cast Mojo broker. | kCastMojoBrokerPath |  | ../chromium/src/chromecast/base/chromecast_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --connectivity-check-url |  Url for network connectivity checking. Default is  "https:clients3.google.com/generate_204". | kConnectivityCheckUrl |  | ../chromium/src/chromecast/net/net_switches.cc |
 | --netifs-to-ignore |  List of network interfaces to ignore. Ignored interfaces will not be used  for network connectivity. | kNetifsToIgnore |  | ../chromium/src/chromecast/net/net_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --force-assistant-onboarding |  | kForceAssistantOnboarding |  | ../chromium/src/chromeos/ash/services/assistant/public/cpp/switches.cc |
 | --redirect-libassistant-logging |  | kRedirectLibassistantLogging |  | ../chromium/src/chromeos/ash/services/assistant/public/cpp/switches.cc |
 | --disable-libassistant-logfile |  | kDisableLibAssistantLogfile |  | ../chromium/src/chromeos/ash/services/assistant/public/cpp/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --cryptauth-http-host |  Overrides the default URL for Google APIs (https:www.googleapis.com) used  by CryptAuth. | kCryptAuthHTTPHost |  | ../chromium/src/chromeos/ash/services/device_sync/switches.cc |
 | --cryptauth-v2-enrollment-http-host |  Overrides the default URL for CryptAuth v2 Enrollment:  https:cryptauthenrollment.googleapis.com. | kCryptAuthV2EnrollmentHTTPHost |  | ../chromium/src/chromeos/ash/services/device_sync/switches.cc |
 | --cryptauth-v2-devicesync-http-host |  Overrides the default URL for CryptAuth v2 DeviceSync:  https:cryptauthdevicesync.googleapis.com. | kCryptAuthV2DeviceSyncHTTPHost |  | ../chromium/src/chromeos/ash/services/device_sync/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --use-fake-mahi-manager |  Use the fake MahiManager within the Mahi feature. Also always show the Mahi  menu when context menu is shown. | kUseFakeMahiManager |  | ../chromium/src/chromeos/components/mahi/public/cpp/mahi_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --container-app-preinstall-activation-time-threshold |  The name for the command-line switch used to provide the activation time  threshold for the container app. Note that this switch will only be used for  testing purposes. | kContainerAppPreinstallActivationTimeThreshold |  | ../chromium/src/chromeos/constants/chromeos_switches.cc |
 | --container-app-preinstall-debug-key |  The name for the command-line switch used to provide the key which gates  debugging preinstallation of the container app. | kContainerAppPreinstallDebugKey |  | ../chromium/src/chromeos/constants/chromeos_switches.cc |
 | --mahi-restrictions-override |  Use in test to override mahi age and country restriction. | kMahiRestrictionsOverride |  | ../chromium/src/chromeos/constants/chromeos_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --attestation-server |  Used in AttestationClient to determine which Google Privacy CA to use for  attestation. | kAttestationServer |  | ../chromium/src/chromeos/dbus/constants/dbus_switches.cc |
 | --biod-fake |  Enables BIOD fake behavior. If the switch is set, fake biod D-Bus client is  initialized and BIOD events do not reach chrome. | kBiodFake |  | ../chromium/src/chromeos/dbus/constants/dbus_switches.cc |
 | --cros-disks-fake |  Enables cros disks fake behavior. If the switch is set, fake cros disk D-Bus  client is initialized and USB events do not reach chrome. | kCrosDisksFake |  | ../chromium/src/chromeos/dbus/constants/dbus_switches.cc |
@@ -881,16 +687,10 @@
 | --sms-test-messages |  Sends test messages on first call to RequestUpdate (stub only). | kSmsTestMessages |  | ../chromium/src/chromeos/dbus/constants/dbus_switches.cc |
 | --system-developer-mode |  Used by FakeDebugDaemonClient to specify that the system is running in dev  mode when running in a Linux environment. The dev mode probing is done by  session manager. | kSystemDevMode |  | ../chromium/src/chromeos/dbus/constants/dbus_switches.cc |
 | --register-max-dark-suspend-delay |  Makes Chrome register the maximum dark suspend delay possible on Chrome OS  i.e. give the device the maximum amount of time to do its work in dark  resume as is allowed by the power manager. | kRegisterMaxDarkSuspendDelay |  | ../chromium/src/chromeos/dbus/constants/dbus_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --ondevice_handwriting |  Used to determine if and how on-device handwriting recognition is supported  (e.g. via rootfs or downloadable content). | kOndeviceHandwritingSwitch |  | ../chromium/src/chromeos/services/machine_learning/public/cpp/ml_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --cros-startup-data-fd |  FD pointing a (memory backed) file containing the startup data. | kCrosStartupDataFD |  | ../chromium/src/chromeos/startup/startup_switches.cc |
 | --cros-postlogin-data-fd |  FD pointing to an anonymous pipe containing the post-login data. | kCrosPostLoginDataFD |  | ../chromium/src/chromeos/startup/startup_switches.cc |
 | --cros-postlogin-log-file |  The path of the log file that Lacros should use post-login. | kCrosPostLoginLogFile |  | ../chromium/src/chromeos/startup/startup_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --autofill-api-key |  Sets the API key that will be used when calling Autofill API instead of  using Chrome's baked key by default. You can use this to test new versions  of the API that are not linked to the Chrome baked key yet. | kAutofillAPIKey |  | ../chromium/src/components/autofill/core/common/autofill_switches.cc |
 | --autofill-server-url |  Override the default autofill server URL with "scheme:host[:port]/prefix/". | kAutofillServerURL |  | ../chromium/src/components/autofill/core/common/autofill_switches.cc |
 | --autofill-upload-throttling-period-in-days |  The number of days after which to reset the registry of autofill events for  which an upload has been sent. | kAutofillUploadThrottlingPeriodInDays |  | ../chromium/src/components/autofill/core/common/autofill_switches.cc |
@@ -898,51 +698,27 @@
 | --show-autofill-type-predictions |  Annotates forms with Autofill field type predictions. | kShowAutofillTypePredictions |  | ../chromium/src/components/autofill/core/common/autofill_switches.cc |
 | --show-autofill-signatures |  Annotates forms and fields with Autofill signatures. | kShowAutofillSignatures |  | ../chromium/src/components/autofill/core/common/autofill_switches.cc |
 | --wallet-service-use-sandbox |  Use the sandbox Online Wallet service URL (for developer testing). | kWalletServiceUseSandbox |  | ../chromium/src/components/autofill/core/common/autofill_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --initialize-client-hints-storage |  Pre-load the client hint storage. Takes a JSON dict, with each key being an  origin (RFC 6454 Section 6.2) and each value a comma-separated list of client  hint tokens (RFC 8942 Section 3.1, client-hints-infrastructure Section 7.1).   Each origin/token-list entry will be parsed and persisted to the Client Hints  storage as though the token-list had come through an Accept-CH response  header from a navigation from the origin.   The initialization will only apply to non-OffTheRecord profiles, meaning  incognito or guest profiles will not have the storage applied. | kInitializeClientHintsStorage |  | ../chromium/src/components/client_hints/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --component-updater |  Comma-separated options to troubleshoot the component updater. Only valid  for the browser process. | kComponentUpdater |  | ../chromium/src/components/component_updater/component_updater_switches.cc |
 | --component-updater-trust-tokens-component-path |  Optional testing override of the Trust Tokens key commitment component's  path. | kComponentUpdaterTrustTokensComponentPath |  | ../chromium/src/components/component_updater/component_updater_switches.cc |
 | --campaigns-test-tag |  Switch to control which serving campaigns file versions to select in test  cohort. Example: `--campaigns-test-tag=dev1` will select test cohort which  tag matches dev1. | kCampaignsTestTag |  | ../chromium/src/components/component_updater/component_updater_switches.cc |
 | --demo-app-test-tag |  Switch to control which serving demo mode app versions to select in test  cohort. Example: `--demo-app-test-tag=dev1` will select test cohort which tag  matches dev1. | kDemoModeTestTag |  | ../chromium/src/components/component_updater/component_updater_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --crashpad-handler |  A process type (switches::kProcessType) that indicates chrome.exe or  setup.exe is being launched as crashpad_handler. This is only used on  Windows. We bundle the handler into chrome.exe on Windows because there is  high probability of a "new" .exe being blocked or interfered with by  application firewalls, AV software, etc. On other platforms, crashpad_handler  is a standalone executable. | kCrashpadHandler |  | ../chromium/src/components/crash/core/app/crash_switches.cc |
 | --crashpad-handler-pid |  The process ID of the Crashpad handler. | kCrashpadHandlerPid | BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) | ../chromium/src/components/crash/core/app/crash_switches.cc |
 | --crash-loop-before |  A time_t. Passed by session_manager into the Chrome user session, indicating  that if Chrome crashes before the indicated time, session_manager will  consider this to be a crash-loop situation and log the user out. Chrome  mostly just passes this to crash_reporter if it crashes. | kCrashLoopBefore | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/components/crash/core/app/crash_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-distillability-service |  | kEnableDistillabilityService |  | ../chromium/src/components/dom_distiller/core/dom_distiller_switches.cc |
 | --enable-dom-distiller |  | kEnableDomDistiller |  | ../chromium/src/components/dom_distiller/core/dom_distiller_switches.cc |
 | --reader-mode-heuristics |  | kReaderModeHeuristics |  | ../chromium/src/components/dom_distiller/core/dom_distiller_switches.cc |
 | --reader-mode-feedback |  | kReaderModeFeedback |  | ../chromium/src/components/dom_distiller/core/dom_distiller_switches.cc |
 | --discoverability |  namespace reader_mode_heuristics | kReaderModeDiscoverabilityParamName |  | ../chromium/src/components/dom_distiller/core/dom_distiller_switches.cc |
 | --offer-in-settings |  | kReaderModeOfferInSettings |  | ../chromium/src/components/dom_distiller/core/dom_distiller_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-dinosaur-easter-egg |  Disables the dinosaur easter egg on the offline interstitial. | kDisableDinosaurEasterEgg |  | ../chromium/src/components/error_page/common/error_page_switches.cc |
 | --enable-dinosaur-easter-egg-alt-images |  Enable the dinosaur easter egg alternative images. | kEnableDinosaurEasterEggAltGameImages |  | ../chromium/src/components/error_page/common/error_page_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --feedback-server |  Alternative feedback server to use when submitting user feedback | kFeedbackServer |  | ../chromium/src/components/feedback/feedback_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --flag-switches-begin |  These two flags are added around the switches about:flags adds to the  command line. This is useful to see which switches were added by about:flags  on about:version. They don't have any effect. | kFlagSwitchesBegin |  | ../chromium/src/components/flags_ui/flags_ui_switches.cc |
 | --flag-switches-end |  | kFlagSwitchesEnd |  | ../chromium/src/components/flags_ui/flags_ui_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --google-base-url |  Specifies an alternate URL to use for speaking to Google. Useful for testing. | kGoogleBaseURL |  | ../chromium/src/components/google/core/common/google_switches.cc |
 | --ignore-google-port-numbers |  When set, this will ignore the PortPermission passed in the google_util.h  methods and ignore the port numbers. This makes it easier to run tests for  features that use these methods (directly or indirectly) with the  EmbeddedTestServer, which is more representative of production. | kIgnoreGooglePortNumbers |  | ../chromium/src/components/google/core/common/google_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --default-background-color |  The background color to be used if the page doesn't specify one. Provided as  RGB or RGBA integer value in hex, e.g. 'ff0000ff' for red or '00000000' for  transparent. | kDefaultBackgroundColor |  | ../chromium/src/components/headless/command_handler/headless_command_switches.cc |
 | --dump-dom |  Print the serialized DOM (doctype + document.documentElement.outerHTML) to  stdout. | kDumpDom |  | ../chromium/src/components/headless/command_handler/headless_command_switches.cc |
 | --print-to-pdf |  Save a PDF file of the loaded page. | kPrintToPDF |  | ../chromium/src/components/headless/command_handler/headless_command_switches.cc |
@@ -952,24 +728,10 @@
 | --screenshot |  Save a screenshot of the loaded page. | kScreenshot |  | ../chromium/src/components/headless/command_handler/headless_command_switches.cc |
 | --timeout |  Issues a stop after the specified number of milliseconds.  This cancels all  navigation and causes the DOMContentLoaded event to fire. | kTimeout |  | ../chromium/src/components/headless/command_handler/headless_command_switches.cc |
 | --virtual-time-budget |  If set the system waits the specified number of virtual milliseconds before  deeming the page to be ready.  For determinism virtual time does not advance  while there are pending network fetches (i.e no timers will fire). Once all  network fetches have completed, timers fire and if the system runs out of  virtual time is fastforwarded so the next timer fires immediately, until the  specified virtual time budget is exhausted. | kVirtualTimeBudget |  | ../chromium/src/components/headless/command_handler/headless_command_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --subproc-heap-profiling |  Forces Heap Profiling on for a subprocess. The browser will add this when  the kHeapProfilerCentralControl feature is enabled and the subprocess should  be profiled. | kSubprocessHeapProfiling |  | ../chromium/src/components/heap_profiling/in_process/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --validate-input-event-stream |  In debug builds, asserts that the stream of input events is valid. | kValidateInputEventStream |  | ../chromium/src/components/input/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --cast-developer-certificate-path |  When enabled by build flags, passing this argument allows the Cast  authentication utils to use a custom root developer certificate in the trust  store instead of the root Google-signed cert. | kCastDeveloperCertificatePath |  | ../chromium/src/components/media_router/common/providers/cast/certificate/switches.cc |
 | --cast-log-device-cert-chain |  When enabled, prints a PEM-encoded the device certificate chain at VLOG  level 3. | kCastLogDeviceCertChain |  | ../chromium/src/components/media_router/common/providers/cast/certificate/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --export-uma-logs-to-file |  Enables the observing of all UMA logs created during the session and  automatically exports them to the passed file path on shutdown (the file is  created if it does not already exist). This also enables viewing all UMA logs  in the chrome:metrics-internals debug page. The format of the exported file  is outlined in MetricsServiceObserver::ExportLogsAsJson().  Example usage: --export-uma-logs-to-file=/tmp/logs.json | kExportUmaLogsToFile |  | ../chromium/src/components/metrics/metrics_switches.cc |
 | --force-enable-metrics-reporting |  Forces metrics reporting to be enabled. Should not be used for tests as it  will send data to servers. | kForceEnableMetricsReporting |  | ../chromium/src/components/metrics/metrics_switches.cc |
 | --force-msbb-setting-on-for-ukm |  Forces MSBB setting to be on for UKM recording. Should only be used in  automated testing browser sessions in which it is infeasible or impractical  to toggle the setting manually. | kForceMsbbSettingOnForUkm |  | ../chromium/src/components/metrics/metrics_switches.cc |
@@ -979,8 +741,6 @@
 | --ukm-server-url |  Overrides the URL of the server that UKM reports are uploaded to. This can  only be used in debug builds. | kUkmServerUrl |  | ../chromium/src/components/metrics/metrics_switches.cc |
 | --uma-server-url |  Overrides the URL of the server that UMA reports are uploaded to. This can  only be used in debug builds. | kUmaServerUrl |  | ../chromium/src/components/metrics/metrics_switches.cc |
 | --uma-insecure-server-url |  Overrides the URL of the server that UMA reports are uploaded to when the  connection to the default secure URL fails (see |kUmaServerUrl|). This can  only be used in debug builds. | kUmaInsecureServerUrl |  | ../chromium/src/components/metrics/metrics_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-pnacl-crash-throttling |  Disables crash throttling for Portable Native Client. | kDisablePnaclCrashThrottling |  | ../chromium/src/components/nacl/common/nacl_switches.cc |
 | --enable-nacl-debug |  Enables debugging via RSP over a socket. | kEnableNaClDebug |  | ../chromium/src/components/nacl/common/nacl_switches.cc |
 | --force-pnacl-subzero |  Force use of the Subzero as the PNaCl translator instead of LLC. | kForcePNaClSubzero |  | ../chromium/src/components/nacl/common/nacl_switches.cc |
@@ -994,17 +754,9 @@
 | --4 |  | kVerboseLoggingInNaclChoiceHigh |  | ../chromium/src/components/nacl/common/nacl_switches.cc |
 | --7 |  | kVerboseLoggingInNaclChoiceHighest |  | ../chromium/src/components/nacl/common/nacl_switches.cc |
 | --0 |  | kVerboseLoggingInNaclChoiceDisabled |  | ../chromium/src/components/nacl/common/nacl_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --http2-grease-settings |  `kEnableHttp2GreaseSettings` does not include the word "enable" for  historical reasons. | kEnableHttp2GreaseSettings |  | ../chromium/src/components/network_session_configurator/common/network_switches.cc |
 | --disable-http2-grease-settings |  | kDisableHttp2GreaseSettings |  | ../chromium/src/components/network_session_configurator/common/network_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-ntp-search-engine-country-detection |  Enables using the default search engine country to show country specific  popular sites on the NTP. | kEnableNTPSearchEngineCountryDetection |  | ../chromium/src/components/ntp_tiles/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --optimization_guide_hints_override |  Overrides the Hints Protobuf that would come from the component updater. If  the value of this switch is invalid, regular hint processing is used.  The value of this switch should be a base64 encoding of a binary  Configuration message, found in optimization_guide's hints.proto. Providing a  valid value to this switch causes Chrome startup to block on hints parsing. | kHintsProtoOverride |  | ../chromium/src/components/optimization_guide/core/optimization_guide_switches.cc |
 | --optimization-guide-fetch-hints-override |  Overrides scheduling and time delays for fetching hints and causes a hints  fetch immediately on start up using the provided comma separate lists of  hosts. | kFetchHintsOverride |  | ../chromium/src/components/optimization_guide/core/optimization_guide_switches.cc |
 | --optimization-guide-fetch-hints-override-timer |  Overrides the hints fetch scheduling and delay, causing a hints fetch  immediately on start up using the TopHostProvider. This is meant for testing. | kFetchHintsOverrideTimer |  | ../chromium/src/components/optimization_guide/core/optimization_guide_switches.cc |
@@ -1031,25 +783,13 @@
 | --optimization-guide-get-free-disk-space-with-user-visible-priority-task |  | kGetFreeDiskSpaceWithUserVisiblePriorityTask |  | ../chromium/src/components/optimization_guide/core/optimization_guide_switches.cc |
 | --optimization-guide-language-override |  Allows sending an language code to the backend. | kOptimizationGuideLanguageOverride |  | ../chromium/src/components/optimization_guide/core/optimization_guide_switches.cc |
 | --optimization-guide-google-api-key-configuration-check-override |  Enables overriding Google API key configuration check for permissions. | kGoogleApiKeyConfigurationCheckOverride |  | ../chromium/src/components/optimization_guide/core/optimization_guide_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --use-mock-keychain |  | kUseMockKeychain | BUILDFLAG(IS_APPLE) | ../chromium/src/components/os_crypt/sync/os_crypt_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-page-content-annotations-logging |  | kPageContentAnnotationsLoggingEnabled |  | ../chromium/src/components/page_content_annotations/core/page_content_annotations_switches.cc |
 | --page-content-annotations-validation-startup-delay-seconds |  | kPageContentAnnotationsValidationStartupDelaySeconds |  | ../chromium/src/components/page_content_annotations/core/page_content_annotations_switches.cc |
 | --page-content-annotations-validation-batch-size |  | kPageContentAnnotationsValidationBatchSizeOverride |  | ../chromium/src/components/page_content_annotations/core/page_content_annotations_switches.cc |
 | --page-content-annotations-validation-content-visibility |  Enables the specific annotation type to run validation at startup after a  delay. A comma separated list of inputs can be given as a value which will be  used as input for the validation job. | kPageContentAnnotationsValidationContentVisibility |  | ../chromium/src/components/page_content_annotations/core/page_content_annotations_switches.cc |
 | --page-content-annotations-validation-write-to-file |  Writes the output of page content annotation validations to the given file. | kPageContentAnnotationsValidationWriteToFile |  | ../chromium/src/components/page_content_annotations/core/page_content_annotations_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --deny-permission-prompts |  Prevents permission prompts from appearing by denying instead of showing  prompts. | kDenyPermissionPrompts |  | ../chromium/src/components/permissions/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --device-management-url |  Specifies the URL at which to communicate with the device management backend  to fetch configuration policies and perform other device tasks. | kDeviceManagementUrl |  | ../chromium/src/components/policy/core/common/policy_switches.cc |
 | --realtime-reporting-url |  Specifies the URL at which to upload real-time reports. | kRealtimeReportingUrl |  | ../chromium/src/components/policy/core/common/policy_switches.cc |
 | --encrypted-reporting-url |  Specifies the URL at which to upload encrypted reports. | kEncryptedReportingUrl |  | ../chromium/src/components/policy/core/common/policy_switches.cc |
@@ -1058,50 +798,20 @@
 | --policy-verification-key |  Replace the original verification_key with the one provided by the command  line flag. Can be used only for unit tests or browser tests. | kPolicyVerificationKey |  | ../chromium/src/components/policy/core/common/policy_switches.cc |
 | --disable-policy-key-verification |  Disables the verification of policy signing keys. It just works on Chrome OS  test images and crashes otherwise.  TODO(crbug.com/1225054): This flag might introduce security risks. Find a  better solution to enable policy tast test for Family Link account. | kDisablePolicyKeyVerification | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/components/policy/core/common/policy_switches.cc |
 | --secure-connect-api-url |  Specifies the base URL to contact the secure connect Api. | kSecureConnectApiUrl |  | ../chromium/src/components/policy/core/common/policy_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --mark_as_phishing |  List of comma-separated URLs to show the social engineering red interstitial  for. | kMarkAsPhishing |  | ../chromium/src/components/safe_browsing/core/common/safebrowsing_switches.cc |
 | --safebrowsing-manual-download-blacklist |  List of comma-separated sha256 hashes of executable files which the  download-protection service should treat as "dangerous."  For a file to  show a warning, it also must be considered a dangerous filetype and not  be allowlisted otherwise (by signature or URL) and must be on a supported  OS. Hashes are in hex. This is used for manual testing when looking  for ways to by-pass download protection. | kSbManualDownloadBlocklist |  | ../chromium/src/components/safe_browsing/core/common/safebrowsing_switches.cc |
 | --safebrowsing-enable-enhanced-protection |  Enable Safe Browsing Enhanced Protection. | kSbEnableEnhancedProtection |  | ../chromium/src/components/safe_browsing/core/common/safebrowsing_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --extra-search-query-params |  | kExtraSearchQueryParams |  | ../chromium/src/components/search_engines/search_engines_switches.cc |
 | --search-engine-choice-country |  | kSearchEngineChoiceCountry |  | ../chromium/src/components/search_engines/search_engines_switches.cc |
 | --ignore-no-first-run-for-search-engine-choice-screen |  | kIgnoreNoFirstRunForSearchEngineChoiceScreen |  | ../chromium/src/components/search_engines/search_engines_switches.cc |
 | --disable-search-engine-choice-screen |  | kDisableSearchEngineChoiceScreen |  | ../chromium/src/components/search_engines/search_engines_switches.cc |
 | --force-search-engine-choice-screen |  | kForceSearchEngineChoiceScreen |  | ../chromium/src/components/search_engines/search_engines_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --google-doodle-url |  Overrides the URL used to fetch the current Google Doodle.  Example: https:www.google.com/async/ddljson  Testing? Try:    https:www.gstatic.com/chrome/ntp/doodle_test/ddljson_android0.json    https:www.gstatic.com/chrome/ntp/doodle_test/ddljson_android1.json    https:www.gstatic.com/chrome/ntp/doodle_test/ddljson_android2.json    https:www.gstatic.com/chrome/ntp/doodle_test/ddljson_android3.json    https:www.gstatic.com/chrome/ntp/doodle_test/ddljson_android4.json | kGoogleDoodleUrl |  | ../chromium/src/components/search_provider_logos/switches.cc |
 | --search-provider-logo-url |  Use a static URL for the logo of the default search engine.  Example: https:www.google.com/branding/logo.png | kSearchProviderLogoURL |  | ../chromium/src/components/search_provider_logos/switches.cc |
 | --third-party-doodle-url |  Overrides the Doodle URL to use for third-party search engines.  Testing? Try:    https:www.gstatic.com/chrome/ntp/doodle_test/third_party_simple.json    https:www.gstatic.com/chrome/ntp/doodle_test/third_party_animated.json | kThirdPartyDoodleURL |  | ../chromium/src/components/search_provider_logos/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --force-fre-default-browser-step |  Force enable the default browser step in the first run experience on Desktop. | kForceFreDefaultBrowserStep | BUILDFLAG(ENABLE_DICE_SUPPORT) | ../chromium/src/components/signin/public/base/signin_switches.cc |
 | --clear-token-service |  Clears the token service before using it. This allows simulating the  expiration of credentials during testing. | kClearTokenService |  | ../chromium/src/components/signin/public/base/signin_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --initialize-mojo-as-broker |  Used by some tests to force Mojo broker initialization in a spawned child  process. | kInitializeMojoAsBroker |  | ../chromium/src/components/test/test_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-background-tracing |  Enables background tracing by passing a scenarios config as an argument. The  config is a serialized proto `perfetto.protos.ChromeFieldTracingConfig`  defined in  third_party/perfetto/protos/perfetto/config/chrome/scenario_config.proto.  protoc can be used to generate a serialized proto config with  protoc    --encode=perfetto.protos.ChromeFieldTracingConfig    --proto_path=third_party/perfetto/      third_party/perfetto/protos/perfetto/config/chrome/scenario_config.proto   < {input txt config}.pbtxt > {output proto config}.pb | kEnableBackgroundTracing |  | ../chromium/src/components/tracing/common/tracing_switches.cc |
 | --enable-legacy-background-tracing |  Enables background tracing by passing legacy trigger rules as an argument. | kEnableLegacyBackgroundTracing |  | ../chromium/src/components/tracing/common/tracing_switches.cc |
 | --trace-config-file |  Causes TRACE_EVENT flags to be recorded from startup.  This flag will be ignored if --trace-startup or --trace-shutdown is provided. | kTraceConfigFile |  | ../chromium/src/components/tracing/common/tracing_switches.cc |
@@ -1120,18 +830,10 @@
 | --background-tracing-output-path |  Sets a local folder destination for tracing data. This is only used if  kEnableBackgroundTracing is also specified. | kBackgroundTracingOutputPath |  | ../chromium/src/components/tracing/common/tracing_switches.cc |
 | --trace-smb-size |  Configures the size of the shared memory buffer used for tracing. Value is  provided in kB. Defaults to 4096. Should be a multiple of the SMB page size  (currently 32kB on Desktop or 4kB on Android). | kTraceSmbSize |  | ../chromium/src/components/tracing/common/tracing_switches.cc |
 | --default-trace-buffer-size-limit-in-kb |  This is only used when we did not set buffer size in trace config and will be  used for all trace sessions. If not provided, we will use the default value  provided in perfetto_config.cc | kDefaultTraceBufferSizeLimitInKb |  | ../chromium/src/components/tracing/common/tracing_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --translate-script-url |  Overrides the default server used for Google Translate. | kTranslateScriptURL |  | ../chromium/src/components/translate/core/common/translate_switches.cc |
 | --translate-security-origin |  Overrides security-origin with which Translate runs in an isolated world. | kTranslateSecurityOrigin |  | ../chromium/src/components/translate/core/common/translate_switches.cc |
 | --translate-ranker-model-url |  Overrides the URL from which the translate ranker model is downloaded. | kTranslateRankerModelURL |  | ../chromium/src/components/translate/core/common/translate_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-ui-devtools |  Enables DevTools server for UI (mus, ash, etc). Value should be the port the  server is started on. Default port is 9223. | kEnableUiDevTools |  | ../chromium/src/components/ui_devtools/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-field-trial-config |  Disable field trial tests configured in fieldtrial_testing_config.json. | kDisableFieldTrialTestingConfig |  | ../chromium/src/components/variations/variations_switches.cc |
 | --disable-variations-safe-mode |  Disable variations safe mode. | kDisableVariationsSafeMode |  | ../chromium/src/components/variations/variations_switches.cc |
 | --disable-variations-seed-fetch-throttling |  Disables throttling for fetching the variations seed on mobile platforms. The  seed will be fetched on startup and every time the app enters the foreground,  regardless of the time passed in between the fetches. On Desktop, this switch  has no effect (the seed is fetched periodically instead). | kDisableVariationsSeedFetchThrottling |  | ../chromium/src/components/variations/variations_switches.cc |
@@ -1149,8 +851,6 @@
 | --variations-seed-fetch-interval |  Override the time interval between each variation seed fetches. Unit is in  minutes. The minimum is 1 minute. The default is 30 minutes. | kVariationsSeedFetchInterval |  | ../chromium/src/components/variations/variations_switches.cc |
 | --enable-finch-seed-delta-compression |  Enables delta-compression when fetching a new seed via the "first run" code  path on Android. | kEnableFinchSeedDeltaCompression |  | ../chromium/src/components/variations/variations_switches.cc |
 | --accept-empty-variations-seed-signature |  Accept an empty signature when loading a variations seed. This is for  testing purposes. | kAcceptEmptySeedSignatureForTesting |  | ../chromium/src/components/variations/variations_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --deadline-to-synchronize-surfaces |  The default number of the BeginFrames to wait to activate a surface with  dependencies. | kDeadlineToSynchronizeSurfaces |  | ../chromium/src/components/viz/common/switches.cc |
 | --delegated-ink-renderer |  Force the use of a Delegated Ink renderer as specified by  the command line argument, rather than using system details. Acceptable  values are: skia, system, none. Default to skia. | kDelegatedInkRenderer |  | ../chromium/src/components/viz/common/switches.cc |
 | --disable-adpf |  Disables reporting of frame timing via ADPF, even if supported on the device. | kDisableAdpf |  | ../chromium/src/components/viz/common/switches.cc |
@@ -1161,29 +861,9 @@
 | --show-aggregated-damage |  Adds a DebugBorderDrawQuad to the top of the root RenderPass showing the  damage rect after surface aggregation. Note that when enabled this feature  sets the entire output rect as damaged after adding the quad to highlight the  real damage rect, which could hide damage rect problems. | kShowAggregatedDamage |  | ../chromium/src/components/viz/common/switches.cc |
 | --tint-composited-content-modulate |  Modulates the debug compositor tint color so that damage and page flip  updates are made clearly visible. This feature was useful in determining the  root cause of https:b.corp.google.com/issues/183260320 . The tinting flag  "tint-composited-content" must also be enabled for this flag to used. | kTintCompositedContentModulate |  | ../chromium/src/components/viz/common/switches.cc |
 | --show-dc-layer-debug-borders |  Show debug borders for DC layers - red for overlays and blue for underlays.  The debug borders are offset from the layer rect by a few pixels for clarity. | kShowDCLayerDebugBorders |  | ../chromium/src/components/viz/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --viz-demo-use-gpu |  | kVizDemoUseGPU |  | ../chromium/src/components/viz/demo/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --bypass-app-banner-engagement-checks |  This flag causes the user engagement checks for showing app banners to be  bypassed. It is intended to be used by developers who wish to test that their  sites otherwise meet the criteria needed to show app banners. | kBypassAppBannerEngagementChecks |  | ../chromium/src/components/webapps/common/switches.cc |
 | --bypass-installable-message-throttle-for-testing |  This flag allow bypassing installable message throttle for testing purpose. | kBypassInstallThrottleForTesting |  | ../chromium/src/components/webapps/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --allow-file-access-from-files |  By default, file: URIs cannot read other file: URIs. This is an  override for developers who need the old behavior for testing. | kAllowFileAccessFromFiles |  | ../chromium/src/content/public/common/content_switches.cc |
 | --allow-insecure-localhost |  Enables TLS/SSL errors on localhost to be ignored (no interstitial,  no blocking of requests). | kAllowInsecureLocalhost |  | ../chromium/src/content/public/common/content_switches.cc |
 | --allow-loopback-in-peer-connection |  Allows loopback interface to be added in network list for peer connection. | kAllowLoopbackInPeerConnection |  | ../chromium/src/content/public/common/content_switches.cc |
@@ -1420,8 +1100,6 @@
 | --gpu2-startup-dialog |  Causes the second GPU process used for gpu info collection to display a  dialog on launch. | kGpu2StartupDialog | BUILDFLAG(IS_WIN) | ../chromium/src/content/public/common/content_switches.cc |
 | --audio-process-high-priority |  Use high priority for the audio process. | kAudioProcessHighPriority | BUILDFLAG(IS_WIN) | ../chromium/src/content/public/common/content_switches.cc |
 | --remote-debugging-io-pipes |  Specifies pipe names for the incoming and outbound messages on the Windows  platform. This is a comma separated list of two pipe handles serialized as  unsigned integers, e.g. "--remote-debugging-io-pipes=3,4". | kRemoteDebuggingIoPipes | BUILDFLAG(IS_WIN) | ../chromium/src/content/public/common/content_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --user-data-dir |  Makes Content Shell use the given path for its data directory.  NOTE: "user-data-dir" is used to align with Chromedriver's behavior. Please  do NOT change this to another value.  NOTE: The same value is also used at Java-side in  ContentShellBrowserTestActivity.java#getUserDataDirectoryCommandLineSwitch(). | kContentShellUserDataDir |  | ../chromium/src/content/shell/common/shell_switches.cc |
 | --crash-dumps-dir |  The directory breakpad should store minidumps in. | kCrashDumpsDir |  | ../chromium/src/content/shell/common/shell_switches.cc |
 | --disable-system-font-check |  Disables the check for the system font when specified. | kDisableSystemFontCheck |  | ../chromium/src/content/shell/common/shell_switches.cc |
@@ -1433,8 +1111,6 @@
 | --remote-debugging-address |  Use the given address instead of the default loopback for accepting remote  debugging connections. Note that the remote debugging protocol does not  perform any authentication, so exposing it too widely can be a security  risk. | kRemoteDebuggingAddress |  | ../chromium/src/content/shell/common/shell_switches.cc |
 | --run-web-tests |  Runs Content Shell in web test mode, injecting test-only behaviour for  blink web tests. | kRunWebTests |  | ../chromium/src/content/shell/common/shell_switches.cc |
 | --test-register-standard-scheme |  Register the provided scheme as a standard scheme. | kTestRegisterStandardScheme |  | ../chromium/src/content/shell/common/shell_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --allow-external-pages |  Allow access to external pages during web tests. | kAllowExternalPages |  | ../chromium/src/content/web_test/common/web_test_switches.cc |
 | --crash-on-failure |  When specified to "enable-leak-detection" command-line option,  causes the leak detector to cause immediate crash when found leak. | kCrashOnFailure |  | ../chromium/src/content/web_test/common/web_test_switches.cc |
 | --debug-devtools |  Run devtools tests in debug mode (not bundled and minified) | kDebugDevTools |  | ../chromium/src/content/web_test/common/web_test_switches.cc |
@@ -1448,17 +1124,9 @@
 | --reset-browsing-instance-between-tests |  Forces each web test to be run in a new BrowsingInstance. Required for origin  isolation web tests where the BrowsingInstance retains state from origin  isolation requests, but this flag may benefit other web tests. | kResetBrowsingInstanceBetweenTests |  | ../chromium/src/content/web_test/common/web_test_switches.cc |
 | --stable-release-mode |  This makes us disable some web-platform runtime features so that we test  content_shell as if it was a stable release. It is only followed when  kRunWebTest is set. For the features' level, see  third_party/blink/renderer/platform/RuntimeEnabledFeatures.md | kStableReleaseMode |  | ../chromium/src/content/web_test/common/web_test_switches.cc |
 | --disable-headless-mode |  Disables the shell from beginning in headless mode. Tests will then attempt  to use the hardware GPU for rendering. This is only followed when  kRunWebTests is set. | kDisableHeadlessMode |  | ../chromium/src/content/web_test/common/web_test_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-gamepad-button-axis-events |  Enables gamepadbuttondown, gamepadbuttonup, gamepadbuttonchange,  gamepadaxismove non-standard gamepad events. | kEnableGamepadButtonAxisEvents |  | ../chromium/src/device/gamepad/public/cpp/gamepad_switches.cc |
 | --restrict-gamepad-access |  Enables Feature Policy and Secure Context requirements on getGamepads. | kRestrictGamepadAccess |  | ../chromium/src/device/gamepad/public/cpp/gamepad_switches.cc |
 | --gamepad-polling-interval |  Overrides the gamepad polling interval. Decreasing the interval improves  input latency of buttons and axes but may negatively affect performance due  to more CPU time spent in the input polling thread. | kGamepadPollingInterval |  | ../chromium/src/device/gamepad/public/cpp/gamepad_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --allow-http-background-page |  | kAllowHTTPBackgroundPage |  | ../chromium/src/extensions/common/switches.cc |
 | --allow-legacy-extension-manifests |  | kAllowLegacyExtensionManifests |  | ../chromium/src/extensions/common/switches.cc |
 | --allowlisted-extension-id |  | kAllowlistedExtensionID |  | ../chromium/src/extensions/common/switches.cc |
@@ -1481,15 +1149,9 @@
 | --enable-crx-hash-check |  | kEnableCrxHashCheck |  | ../chromium/src/extensions/common/switches.cc |
 | --allow-future-manifest-version |  | kAllowFutureManifestVersion |  | ../chromium/src/extensions/common/switches.cc |
 | --extension-test-api-on-web-pages |  | kExtensionTestApiOnWebPages |  | ../chromium/src/extensions/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --app-shell-allow-roaming |  Allow roaming in the cellular network. | kAppShellAllowRoaming | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/extensions/shell/common/switches.cc |
 | --app-shell-host-window-size |  Size for the host window to create (i.e. "800x600"). | kAppShellHostWindowSize | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/extensions/shell/common/switches.cc |
 | --app-shell-preferred-network |  SSID of the preferred WiFi network. | kAppShellPreferredNetwork | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/extensions/shell/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-content-directories |  | kEnableContentDirectories |  | ../chromium/src/fuchsia_web/webengine/switches.cc |
 | --enable-widevine |  | kEnableWidevine |  | ../chromium/src/fuchsia_web/webengine/switches.cc |
 | --incognito |  | kIncognito |  | ../chromium/src/fuchsia_web/webengine/switches.cc |
@@ -1507,8 +1169,6 @@
 | --proxy-server |  | kProxyServer |  | ../chromium/src/fuchsia_web/webengine/switches.cc |
 | --allow-running-insecure-content |  | kAllowRunningInsecureContent | BUILDFLAG(ENABLE_CAST_RECEIVER) | ../chromium/src/fuchsia_web/webengine/switches.cc |
 | --use-legacy-metrics-service |  | kUseLegacyMetricsService | BUILDFLAG(ENABLE_CAST_RECEIVER) | ../chromium/src/fuchsia_web/webengine/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --gaia-config |  | kGaiaConfigPath |  | ../chromium/src/google_apis/gaia/gaia_switches.cc |
 | --gaia-config-contents |  | kGaiaConfigContents |  | ../chromium/src/google_apis/gaia/gaia_switches.cc |
 | --google-url |  | kGoogleUrl |  | ../chromium/src/google_apis/gaia/gaia_switches.cc |
@@ -1518,17 +1178,11 @@
 | --oauth-account-manager-url |  | kOAuthAccountManagerUrl |  | ../chromium/src/google_apis/gaia/gaia_switches.cc |
 | --oauth2-client-id |  | kOAuth2ClientID |  | ../chromium/src/google_apis/gaia/gaia_switches.cc |
 | --oauth2-client-secret |  | kOAuth2ClientSecret |  | ../chromium/src/google_apis/gaia/gaia_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --gcm-checkin-url |  Sets the checkin service endpoint that will be used for performing Google  Cloud Messaging checkins. | kGCMCheckinURL |  | ../chromium/src/google_apis/gcm/engine/gservices_switches.cc |
 | --gcm-mcs-endpoint |  Sets the Mobile Connection Server endpoint that will be used for Google  Cloud Messaging. | kGCMMCSEndpoint |  | ../chromium/src/google_apis/gcm/engine/gservices_switches.cc |
 | --gcm-registration-url |  Sets the registration endpoint that will be used for creating new Google  Cloud Messaging registrations. | kGCMRegistrationURL |  | ../chromium/src/google_apis/gcm/engine/gservices_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-gpu-client-logging |  Enable GPU client logging. | kEnableGPUClientLogging |  | ../chromium/src/gpu/command_buffer/client/gpu_switches.cc |
 | --enable-gpu-client-tracing |  Enables TRACE for GL calls in the renderer. | kEnableGpuClientTracing |  | ../chromium/src/gpu/command_buffer/client/gpu_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --compile-shader-always-succeeds |  Always return success when compiling a shader. Linking will still fail. | kCompileShaderAlwaysSucceeds |  | ../chromium/src/gpu/command_buffer/service/gpu_switches.cc |
 | --disable-gl-error-limit |  Disable the GL error log limit. | kDisableGLErrorLimit |  | ../chromium/src/gpu/command_buffer/service/gpu_switches.cc |
 | --disable-glsl-translator |  Disable the GLSL translator. | kDisableGLSLTranslator |  | ../chromium/src/gpu/command_buffer/service/gpu_switches.cc |
@@ -1550,8 +1204,6 @@
 | --native |  | kVulkanImplementationNameNative |  | ../chromium/src/gpu/command_buffer/service/gpu_switches.cc |
 | --swiftshader |  | kVulkanImplementationNameSwiftshader |  | ../chromium/src/gpu/command_buffer/service/gpu_switches.cc |
 | --disable-vulkan-surface |  Disables VK_KHR_surface extension. Instead of using swapchain, bitblt will be  used for present render result on screen. | kDisableVulkanSurface |  | ../chromium/src/gpu/command_buffer/service/gpu_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-gpu-rasterization |  Disable GPU rasterization, i.e. rasterize on the CPU only.  Overrides the kEnableGpuRasterization flag. | kDisableGpuRasterization |  | ../chromium/src/gpu/config/gpu_switches.cc |
 | --disable-mipmap-generation |  Disables mipmap generation in Skia. Used a workaround for select low memory  devices, see https:crbug.com/1138979 for details. | kDisableMipmapGeneration |  | ../chromium/src/gpu/config/gpu_switches.cc |
 | --enable-gpu-rasterization |  Allow heuristics to determine when a layer tile should be drawn with the  Skia GPU backend. Only valid with GPU accelerated compositing. | kEnableGpuRasterization |  | ../chromium/src/gpu/config/gpu_switches.cc |
@@ -1595,10 +1247,6 @@
 | --shader-cache-path |  | kShaderCachePath |  | ../chromium/src/gpu/config/gpu_switches.cc |
 | --use-redist-dml |  Try to use a redistributable DirectML.dll. Used for testing WebNN  against newer DirectML release before it is integrated into Windows OS.  Please see more info about DirectML releases at:  https:learn.microsoft.com/en-us/windows/ai/directml/dml-version-history | kUseRedistributableDirectML |  | ../chromium/src/gpu/config/gpu_switches.cc |
 | --enable-gpu-main-time-keeper-metrics |  Enables ThreadControllerWithMessagePumpImpl's TimeKeeper UMA metrics using  CrGpuMain as suffix. | kEnableGpuMainTimeKeeperMetrics |  | ../chromium/src/gpu/config/gpu_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-ios-password-suggestions |  Disable showing available password credentials in the keyboard accessory  view when focused on form fields. | kDisableIOSPasswordSuggestions |  | ../chromium/src/ios/chrome/browser/flags/chrome_switches.cc |
 | --disable-third-party-keyboard-workaround |  Disables the 3rd party keyboard omnibox workaround. | kDisableThirdPartyKeyboardWorkaround |  | ../chromium/src/ios/chrome/browser/flags/chrome_switches.cc |
 | --enable-promo-manager-fullscreen-promos |  Enables the Promo Manager to display full-screen promos on app startup. | kEnablePromoManagerFullscreenPromos |  | ../chromium/src/ios/chrome/browser/flags/chrome_switches.cc |
@@ -1610,16 +1258,12 @@
 | --force-device-switcher-experience |  Enables device switcher experience for the segment specified in the argument,  e.g. "Android." | kForceDeviceSwitcherExperienceCommandLineFlag |  | ../chromium/src/ios/chrome/browser/flags/chrome_switches.cc |
 | --force-shopper-experience |  Enables shopping feature user experience for the segment specified in the  argument, e.g. "ShoppingUser" or "Other". | kForceShopperExperience |  | ../chromium/src/ios/chrome/browser/flags/chrome_switches.cc |
 | --user-agent |  A string used to override the default user agent with a custom one. | kUserAgent |  | ../chromium/src/ios/chrome/browser/flags/chrome_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-all-injected-scripts |  Prevents the injection of all Javascript injected through JavaScriptFeatures. | kDisableAllInjectedScripts |  | ../chromium/src/ios/web/switches.cc |
 | --disable-injected-feature-scripts |  Prevents most injection of Javascript injected through JavaScriptFeatures,  however basic shared scripts which setup WebFrames are still injected. | kDisableInjectedFeatureScripts |  | ../chromium/src/ios/web/switches.cc |
 | --disable-listed-scripts |  Prevents the listed scripts from being injected. The value must be a comma  separated string of `injection_token_`s from the JavaScriptFeatures to be  disabled.  For example, to disable context menu JS, use:  `--disable-listed-scripts=all_frames_context_menu,main_frame_context_menu` | kDisableListedScripts |  | ../chromium/src/ios/web/switches.cc |
 | --enable-listed-scripts |  Enables only the listed scripts. The value must be a comma separated string  of `injection_token_`s from the JavaScriptFeatures to be enabled.  For example, to only enable context menu JS, use:  `--enable-listed-scripts=gcrweb,common,message,all_frames_context_menu,      main_frame_context_menu`  Note that all dependencies, must be manually enabled when using this flag. | kEnableListedScripts |  | ../chromium/src/ios/web/switches.cc |
 | --disable-listed-javascript-features |  Disables the listed JavaScriptFeature instances. The value must be a  comma separated string of the value returned by  `JavaScriptFeature::GetScriptMessageHandlerName()`.  For example, to disable ContextMenuJavaScriptFeature, use:  `--disable-listed-javascript-features=FindElementResultHandler` | kDisableListedJavascriptFeatures |  | ../chromium/src/ios/web/switches.cc |
 | --enable-listed-javascript-features |  Enables only the listed JavaScriptFeature instances. The value must be a  comma separated string of the value returned by  `JavaScriptFeature::GetScriptMessageHandlerName()`. If a feature does not  have a message handler, it will NOT be enabled when using this flag. However,  the features returned by `GetBaseJavaScriptFeature()`,  `GetCommonJavaScriptFeature()` and `GetMessageJavaScriptFeature()` are always  enabled (even though they do not have message handlers) because most features  rely on them and there would otherwise be no way to enable them.  For example, to only enable only ContextMenuJavaScriptFeature, use:  `--enable-listed-javascript-features=FindElementResultHandler` | kEnableListedJavascriptFeatures |  | ../chromium/src/ios/web/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --audio-buffer-size |  Allow users to specify a custom buffer size for debugging purpose. | kAudioBufferSize |  | ../chromium/src/media/base/media_switches.cc |
 | --audio-codecs-from-edid |  Audio codecs supported by the HDMI sink is retrieved from the audio  service process. EDID contains the Short Audio Descriptors, which list  the audio decoders supported, and the information is presented as a  bitmask of supported audio codecs. | kAudioCodecsFromEDID | BUILDFLAG(ENABLE_PASSTHROUGH_AUDIO_CODECS) | ../chromium/src/media/base/media_switches.cc |
 | --autoplay-policy |  Command line flag name to set the autoplay policy. | kAutoplayPolicy |  | ../chromium/src/media/base/media_switches.cc |
@@ -1668,44 +1312,16 @@
 | --cast-streaming-force-enable-hardware-h264 |  | kCastStreamingForceEnableHardwareH264 |  | ../chromium/src/media/base/media_switches.cc |
 | --cast-streaming-force-enable-hardware-vp8 |  | kCastStreamingForceEnableHardwareVp8 |  | ../chromium/src/media/base/media_switches.cc |
 | --cast-streaming-force-enable-hardware-vp9 |  | kCastStreamingForceEnableHardwareVp9 |  | ../chromium/src/media/base/media_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --video-capture-use-gpu-memory-buffer |  Enables GpuMemoryBuffer-based buffer pool. | kVideoCaptureUseGpuMemoryBuffer |  | ../chromium/src/media/capture/capture_switches.cc |
 | --disable-video-capture-use-gpu-memory-buffer |  This is for the same feature controlled by kVideoCaptureUseGpuMemoryBuffer.  kVideoCaptureUseGpuMemoryBuffer is settled by chromeos overlays. This flag is  necessary to overwrite the settings via chrome: flag. The behavior of  chrome:flag#zero-copy-video-capture is as follows;  Default  : Respect chromeos overlays settings.  Enabled  : Force to enable kVideoCaptureUseGpuMemoryBuffer.  Disabled : Force to disable kVideoCaptureUseGpuMemoryBuffer. | kDisableVideoCaptureUseGpuMemoryBuffer |  | ../chromium/src/media/capture/capture_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --mojo-is-broker |  Forces the process's global Mojo node to be configured as a broker. Only  honored for test runners using MojoTestSuiteBase. | kMojoIsBroker |  | ../chromium/src/mojo/core/test/test_switches.cc |
 | --no-mojo |  Disables Mojo initialization completely in the process. Only applies to  test child processes. See base::MultiprocessTest. | kNoMojo |  | ../chromium/src/mojo/core/test/test_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --legacy-client-fd |  The integer value of a file descriptor inherited by the mojo_proxy process  when launched by its host. This descriptor references a Unix socket which is  connected to the legacy client application to be the target of this proxy.  Required. | kLegacyClientFd |  | ../chromium/src/mojo/proxy/switches.cc |
 | --host-ipcz-transport-fd |  The integer value of a file descriptor inherited by the mojo_proxy process  when launched by its host. This descriptor references a Unix socket which is  connected to the host process which launched this proxy to sit between the  host and some legacy client application.  Required. | kHostIpczTransportFd |  | ../chromium/src/mojo/proxy/switches.cc |
 | --inherit-ipcz-broker |  By default, mojo_proxy assumes its host is a broker. When this flag is given  it instead assumes its host is a non-broker who is offering to share their  broker. The proxy must be configured correctly in this regard or all  connections through it will fail. | kInheritIpczBroker |  | ../chromium/src/mojo/proxy/switches.cc |
 | --attachment-name |  For client applications who expect a single Mojo invitation attachment with a  free-form name assigned to it, this specifies that attachment name. Either  this or kNumericAttachmentNames must be specified on the command line. | kAttachmentName |  | ../chromium/src/mojo/proxy/switches.cc |
 | --num-attachments |  For client applications who expect Mojo invitation attachments to be assigned  zero-based 64-bit integral values, this specifies the number of in-use  attachments. The names are implicitly sequental integers starting from 0. | kNumAttachments |  | ../chromium/src/mojo/proxy/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-pepper-testing |  Enables the testing interface for PPAPI. | kEnablePepperTesting |  | ../chromium/src/ppapi/shared_impl/ppapi_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --service-sandbox-type |  Type of sandbox to apply to the process running the service, one of the  values in the next block. | kServiceSandboxType |  | ../chromium/src/sandbox/policy/switches.cc |
 | --none |  Must be in sync with "sandbox_type" values as used in service manager's  manifest.json catalog files. | kNoneSandbox |  | ../chromium/src/sandbox/policy/switches.cc |
 | --none_and_elevated |  | kNoneSandboxAndElevatedPrivileges |  | ../chromium/src/sandbox/policy/switches.cc |
@@ -1755,11 +1371,7 @@
 | --zygote |  | kZygoteProcessType |  | ../chromium/src/sandbox/policy/switches.cc |
 | --relauncher |  | kRelauncherProcessType |  | ../chromium/src/sandbox/policy/switches.cc |
 | --code-sign-clone-cleanup |  | kCodeSignCloneCleanupProcessType |  | ../chromium/src/sandbox/policy/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-hid-blocklist |  Disable the HID blocklist. | kDisableHidBlocklist |  | ../chromium/src/services/device/public/cpp/hid/hid_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --force-effective-connection-type |  Forces Network Quality Estimator (NQE) to return a specific effective  connection type. | kForceEffectiveConnectionType |  | ../chromium/src/services/network/public/cpp/network_switches.cc |
 | --host-resolver-rules |  These mappings only apply to the host resolver. | kHostResolverRules |  | ../chromium/src/services/network/public/cpp/network_switches.cc |
 | --ignore-certificate-errors-spki-list |  A set of public key hashes for which to ignore certificate-related errors.   If the certificate chain presented by the server does not validate, and one  or more certificates have public key hashes that match a key from this list,  the error is ignored.   The switch value must be a comma-separated list of Base64-encoded SHA-256  SPKI Fingerprints (RFC 7469, Section 2.4).   This switch has no effect unless --user-data-dir (as defined by the content  embedder) is also present. | kIgnoreCertificateErrorsSPKIList |  | ../chromium/src/services/network/public/cpp/network_switches.cc |
@@ -1773,25 +1385,13 @@
 | --use-first-party-set |  Allows the manual specification of a First-Party Set, as a comma-separated  list of origins. The first origin in the list is treated as the owner of the  set.  DEPRECATED(crbug.com/1486689): This switch is under deprecation due to  renaming "First-Party Set" to "Related Website Set". Please use  `kUseRelatedWebsiteSet` instead. | kUseFirstPartySet |  | ../chromium/src/services/network/public/cpp/network_switches.cc |
 | --use-related-website-set |  Allows the manual specification of a Related Website Set, as a  comma-separated list of origins. The first origin in the list is treated as  the primary site of the set. | kUseRelatedWebsiteSet |  | ../chromium/src/services/network/public/cpp/network_switches.cc |
 | --ip-address-space-overrides |  Specifies manual overrides to the IP endpoint -> IP address space mapping.  This allows running local tests against "public" and "private" IP addresses.   This switch is specified as a comma-separated list of overrides. Each  override is given as a colon-separated "<endpoint>:<address space>" pair.  Grammar, in pseudo-BNF format:     switch := override-list    override-list := override “,” override-list | <nil>    override := ip-endpoint “=” address-space    address-space := “public” | “private” | “local”    ip-endpoint := ip-address ":" port    ip-address := see `net::ParseURLHostnameToAddress()` for details    port := integer in the [0-65535] range   Any invalid entries in the comma-separated list are ignored.   See also the design doc:  https:docs.google.com/document/d/1-umCGylIOuSG02k9KGDwKayt3bzBXtGwVlCQHHkIcnQ/edit#   And the Web Platform Test RFC #72 behind it:  https:github.com/web-platform-tests/rfcs/blob/master/rfcs/address_space_overrides.md | kIpAddressSpaceOverrides |  | ../chromium/src/services/network/public/cpp/network_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-chrome-tracing-computation |  Disable the tracing service graph compuation while writing the trace. | kDisableChromeTracingComputation |  | ../chromium/src/services/resource_coordinator/memory_instrumentation/switches.cc |
 | --use-heap-profiling-proto-writer |  | kUseHeapProfilingProtoWriter |  | ../chromium/src/services/resource_coordinator/memory_instrumentation/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --service-name |  Indicates the name of the service to run. Useful for debugging, or if a  service executable is built to support being run as a number of potential  different services. | kServiceName |  | ../chromium/src/services/service_manager/public/cpp/service_executable/switches.cc |
 | --service-request-attachment-name |  The name of the |mojo::PendingReceiver<service_manager::mojom::Service>|  message pipe handle that is attached to the incoming Mojo invitation received  by the service. | kServiceRequestAttachmentName |  | ../chromium/src/services/service_manager/public/cpp/service_executable/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-service-manager-tracing |  Enable the tracing service. | kEnableTracing |  | ../chromium/src/services/service_manager/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --text-contrast |  | kTextContrast |  | ../chromium/src/skia/ext/switches.cc |
 | --text-gamma |  | kTextGamma |  | ../chromium/src/skia/ext/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --allow-pre-commit-input |  Allows processing of input before a frame has been committed.  TODO(crbug.com/987626): Used by headless. Look for a way not  involving a command line switch. | kAllowPreCommitInput |  | ../chromium/src/third_party/blink/common/switches.cc |
 | --beforeunload-event-cancel-by-prevent-default-policy |  Used to communicate managed policy for the  BeforeunloadEventCancelByPreventDefault feature. This feature is typically  controlled by base::Feature (see blink/common/features.*) but requires an  enterprise policy override. This is implicitly a tri-state, and can be either  unset, or set to "1" for force enable, or "0" for force disable. | kBeforeunloadEventCancelByPreventDefaultPolicy |  | ../chromium/src/third_party/blink/common/switches.cc |
 | --0 |  | kIntensiveWakeUpThrottlingPolicy_ForceDisable |  | ../chromium/src/third_party/blink/common/switches.cc |
@@ -1836,76 +1436,6 @@
 | --shared-array-buffer-allowed-origins |  Comma-separated list of origins that can use SharedArrayBuffer without  enabling cross-origin isolation. | kSharedArrayBufferAllowedOrigins |  | ../chromium/src/third_party/blink/common/switches.cc |
 | --conditional-focus-window-ms |  Allows overriding the conditional focus window's length. | kConditionalFocusWindowMs |  | ../chromium/src/third_party/blink/common/switches.cc |
 | --js-flags |  Specifies the flags passed to JS engine. | kJavaScriptFlags |  | ../chromium/src/third_party/blink/common/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-experimental-accessibility-autoclick |  Shows additional automatic click features that haven't launched yet. | kEnableExperimentalAccessibilityAutoclick |  | ../chromium/src/ui/accessibility/accessibility_switches.cc |
 | --enable-experimental-accessibility-labels-debugging |  Enables support for visually debugging the accessibility labels  feature, which provides images descriptions for screen reader users. | kEnableExperimentalAccessibilityLabelsDebugging |  | ../chromium/src/ui/accessibility/accessibility_switches.cc |
 | --enable-experimental-accessibility-language-detection |  Enables language detection on in-page text content which is then exposed to  assistive technology such as screen readers. | kEnableExperimentalAccessibilityLanguageDetection |  | ../chromium/src/ui/accessibility/accessibility_switches.cc |
@@ -1917,8 +1447,6 @@
 | --generate-accessibility-test-expectations |  | kGenerateAccessibilityTestExpectations |  | ../chromium/src/ui/accessibility/accessibility_switches.cc |
 | --disable-renderer-accessibility |  Turns off the accessibility in the renderer. | kDisableRendererAccessibility |  | ../chromium/src/ui/accessibility/accessibility_switches.cc |
 | --force-renderer-accessibility |  Force renderer accessibility to be on instead of enabling it on demand when  a screen reader is detected. The disable-renderer-accessibility switch  overrides this if present.  This switch has an optional parameter that forces an AXMode bundle. The three  available bundle settings are: 'basic', 'form-controls', and 'complete'. If  the bundle argument is invalid, then the forced AXMode will default to  'complete'. If the bundle argument is missing, then the initial AXMode will  default to complete but allow changes to the AXMode during execution. | kForceRendererAccessibility |  | ../chromium/src/ui/accessibility/accessibility_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-overscroll-edge-effect |  Disable overscroll edge effects like those found in Android views. | kDisableOverscrollEdgeEffect | BUILDFLAG(IS_ANDROID) | ../chromium/src/ui/base/ui_base_switches.cc |
 | --disable-pull-to-refresh-effect |  Disable the pull-to-refresh effect when vertically overscrolling content. | kDisablePullToRefreshEffect | BUILDFLAG(IS_ANDROID) | ../chromium/src/ui/base/ui_base_switches.cc |
 | --disable-modal-animations |  Disable animations for showing and hiding modal dialogs. | kDisableModalAnimations | BUILDFLAG(IS_MAC) | ../chromium/src/ui/base/ui_base_switches.cc |
@@ -1946,10 +1474,6 @@
 | --enabled |  | kTopChromeTouchUiEnabled |  | ../chromium/src/ui/base/ui_base_switches.cc |
 | --ui-disable-partial-swap |  Disable partial swap which is needed for some OpenGL drivers / emulators. | kUIDisablePartialSwap |  | ../chromium/src/ui/base/ui_base_switches.cc |
 | --use-system-clipboard |  Enables the ozone x11 clipboard for linux-chromeos. | kUseSystemClipboard |  | ../chromium/src/ui/base/ui_base_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --enable-pixel-output-in-tests |  Forces tests to produce pixel output when they normally wouldn't. | kEnablePixelOutputInTests |  | ../chromium/src/ui/compositor/compositor_switches.cc |
 | --ui-enable-rgba-4444-textures |  | kUIEnableRGBA4444Textures |  | ../chromium/src/ui/compositor/compositor_switches.cc |
 | --ui-enable-zero-copy |  | kUIEnableZeroCopy |  | ../chromium/src/ui/compositor/compositor_switches.cc |
@@ -1957,8 +1481,6 @@
 | --ui-show-paint-rects |  | kUIShowPaintRects |  | ../chromium/src/ui/compositor/compositor_switches.cc |
 | --ui-slow-animations |  | kUISlowAnimations |  | ../chromium/src/ui/compositor/compositor_switches.cc |
 | --disable-vsync-for-tests |  | kDisableVsyncForTests |  | ../chromium/src/ui/compositor/compositor_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --ash-enable-software-mirroring |  Enables software based mirroring. | kEnableSoftwareMirroring |  | ../chromium/src/ui/display/display_switches.cc |
 | --ensure-forced-color-profile |  Crash the browser at startup if the display's color profile does not match  the forced color profile. This is necessary on Mac because Chrome's pixel  output is always subject to the color conversion performed by the operating  system. On all other platforms, this is a no-op. | kEnsureForcedColorProfile |  | ../chromium/src/ui/display/display_switches.cc |
 | --force-color-profile |  Force all monitors to be treated as though they have the specified color  profile. Accepted values are "srgb" and "generic-rgb" (currently used by Mac  layout tests) and "color-spin-gamma24" (used by layout tests). | kForceDisplayColorProfile |  | ../chromium/src/ui/display/display_switches.cc |
@@ -1970,10 +1492,6 @@
 | --use-first-display-as-internal |  Uses the 1st display in --ash-host-window-bounds as internal display.  This is for debugging on linux desktop. | kUseFirstDisplayAsInternal |  | ../chromium/src/ui/display/display_switches.cc |
 | --display-properties |  Additional display properties are provided through this switch that are  beyond what is available via EDID encoded as JSON. Please see  `https:chromium.googlesource.com/chromiumos/platform2/+/dd10a5ae3618bb9dc5fb47ac415ebef6e9a3827d/chromeos-config/README.md#displays`  for the data format. | kDisplayProperties | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/ui/display/display_switches.cc |
 | --ash-enable-unified-desktop |  Enables unified desktop mode. | kEnableUnifiedDesktop | BUILDFLAG(IS_CHROMEOS_ASH) | ../chromium/src/ui/display/display_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --compensate-for-unstable-pinch-zoom |  Enable compensation for unstable pinch zoom. Some touch screens display  significant amount of wobble when moving a finger in a straight line. This  makes two finger scroll trigger an oscillating pinch zoom. See  crbug.com/394380 for details. | kCompensateForUnstablePinchZoom |  | ../chromium/src/ui/events/event_switches.cc |
 | --touch-slop-distance |  Overrides touch slop distance for gesture detection. The touch slop distance  is the maximum distance from the starting point of a touch sequence that a  gesture can travel before it can no longer be considered a tap. Scroll  gestures can only begin after this distance has been travelled. The switch  value is a floating point number that is interpreted as a distance in pixels. | kTouchSlopDistance |  | ../chromium/src/ui/events/event_switches.cc |
 | --touch-devices |  Tells chrome to interpret events from these devices as touch events. Only  available with XInput 2 (i.e. X server 1.8 or above). The id's of the  devices can be retrieved from 'xinput list'. | kTouchDevices | BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) | ../chromium/src/ui/events/event_switches.cc |
@@ -1981,12 +1499,6 @@
 | --edge-touch-filtering |  Tells Chrome to do edge touch filtering. Useful for convertible tablet. | kEdgeTouchFiltering | BUILDFLAG(IS_OZONE) | ../chromium/src/ui/events/event_switches.cc |
 | --disable-cancel-all-touches |  Disable CancelAllTouches() function for the implementation on cancel single  touches. | kDisableCancelAllTouches | BUILDFLAG(IS_OZONE) | ../chromium/src/ui/events/event_switches.cc |
 | --enable-microphone-mute-switch-device |  Enables logic to detect microphone mute switch device state, which disables  internal audio input when toggled. | kEnableMicrophoneMuteSwitchDeviceSwitch | BUILDFLAG(IS_OZONE) | ../chromium/src/ui/events/event_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --animation-duration-scale |  Scale factor to apply to every animation duration. Must be >= 0.0. This will  only apply to LinearAnimation and its subclasses. | kAnimationDurationScale |  | ../chromium/src/ui/gfx/switches.cc |
 | --disable-font-subpixel-positioning |  Force disables font subpixel positioning. This affects the character glyph  sharpness, kerning, hinting and layout. | kDisableFontSubpixelPositioning |  | ../chromium/src/ui/gfx/switches.cc |
 | --enable-native-gpu-memory-buffers |  Enable native CPU-mappable GPU memory buffer support on Linux. | kEnableNativeGpuMemoryBuffers |  | ../chromium/src/ui/gfx/switches.cc |
@@ -1995,8 +1507,6 @@
 | --headless |  Run in headless mode, i.e., without a UI or display server dependencies. | kHeadless |  | ../chromium/src/ui/gfx/switches.cc |
 | --display |  Which X11 display to connect to. Emulates the GTK+ "--display=" command line  argument. In use only with Ozone/X11. | kX11Display | BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) | ../chromium/src/ui/gfx/switches.cc |
 | --no-xshm |  Disables MIT-SHM extension. In use only with Ozone/X11. | kNoXshm | BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) | ../chromium/src/ui/gfx/switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-gpu-driver-bug-workarounds |  Disable workarounds for various GPU driver bugs. | kDisableGpuDriverBugWorkarounds |  | ../chromium/src/ui/gl/gl_switches.cc |
 | --disable-gpu-vsync |  Stop the GPU from synchronizing presentation with vblank. | kDisableGpuVsync |  | ../chromium/src/ui/gl/gl_switches.cc |
 | --enable-gpu-service-logging |  Turns on GPU logging (debug build only). | kEnableGPUServiceLogging |  | ../chromium/src/ui/gl/gl_switches.cc |
@@ -2019,10 +1529,6 @@
 | --enable-unsafe-swiftshader |  Allow usage of SwiftShader for WebGL | kEnableUnsafeSwiftShader |  | ../chromium/src/ui/gl/gl_switches.cc |
 | --direct-composition-video-swap-chain-format |  Used for overriding the swap chain format for direct composition SDR video  overlays. | kDirectCompositionVideoSwapChainFormat |  | ../chromium/src/ui/gl/gl_switches.cc |
 | --disable-android-native-fence-sync-for-testing |  On some Android emulators with software GL, ANGLE  is exposing the native fence sync extension but it doesn't  actually work. This switch is used to disable the Android native fence sync  during test to avoid crashes.   TODO(https:crbug.com/337886037): Remove this flag once the upstream ANGLE  is fixed. | kDisableAndroidNativeFenceSyncForTesting | BUILDFLAG(IS_ANDROID) | ../chromium/src/ui/gl/gl_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --ozone-platform |  Specify ozone platform implementation to use. | kOzonePlatform |  | ../chromium/src/ui/ozone/public/ozone_switches.cc |
 | --ozone-platform-hint |  Suggests the ozone platform to use (desktop Linux only).  Can be set on  chrome:flags.  See https:crbug.com/1246928. | kOzonePlatformHint |  | ../chromium/src/ui/ozone/public/ozone_switches.cc |
 | --ozone-dump-file |  Specify location for image dumps. | kOzoneDumpFile |  | ../chromium/src/ui/ozone/public/ozone_switches.cc |
@@ -2032,11 +1538,7 @@
 | --use-wayland-explicit-grab |  Use explicit grab when opening popup windows.  See https:crbug.com/1220274 | kUseWaylandExplicitGrab |  | ../chromium/src/ui/ozone/public/ozone_switches.cc |
 | --disable-explicit-dma-fences |  Disable explicit DMA-fences | kDisableExplicitDmaFences |  | ../chromium/src/ui/ozone/public/ozone_switches.cc |
 | --ozone-override-screen-size |  Specifies ozone screen size. | kOzoneOverrideScreenSize |  | ../chromium/src/ui/ozone/public/ozone_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --disable-input-event-activation-protection |  Disables the disregarding of potentially unintended input events such as  button clicks that happen instantly after the button is shown. Use this for  integration tests that do automated clicks etc. | kDisableInputEventActivationProtectionForTesting |  | ../chromium/src/ui/views/views_switches.cc |
 | --draw-view-bounds-rects |  Draws a semitransparent rect to indicate the bounds of each view. | kDrawViewBoundsRects |  | ../chromium/src/ui/views/views_switches.cc |
 | --view-stack-traces |  Captures stack traces on View construction to provide better debug info. | kViewStackTraces |  | ../chromium/src/ui/views/views_switches.cc |
-| switch | description | variable | cpp condition | location |
-| ------ | ----------- | -------- | ------------- | -------- |
 | --wm-window-animations-disabled |  If present animations are disabled. | kWindowAnimationsDisabled |  | ../chromium/src/ui/wm/core/wm_core_switches.cc |
