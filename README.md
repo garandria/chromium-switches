@@ -1,5 +1,5 @@
-| switch | variable |preproc | location |
-| -------| -------- |------- | -------- |
+| switch | description | variable | cpp condition | location |
+| ------ | ----------- | -------- | ------------- | -------- |
 | --webview-log-js-console-messages |  | kWebViewLogJsConsoleMessages |  | ../chromium/src/android_webview/common/aw_switches.cc |
 | --webview-sandboxed-renderer |  | kWebViewSandboxedRenderer |  | ../chromium/src/android_webview/common/aw_switches.cc |
 | --webview-disable-safebrowsing-support |  used to disable safebrowsing functionality in webview | kWebViewDisableSafebrowsingSupport |  | ../chromium/src/android_webview/common/aw_switches.cc |
