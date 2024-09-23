@@ -52,6 +52,10 @@ def file2bytes(f_input):
     return content
 
 
+def get_code_range(source, start, end):
+    return source[start:end].decode("utf8")
+
+
 def get_code(source, node):
     return source[node.start_byte:node.end_byte].decode("utf8")
 
