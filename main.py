@@ -57,7 +57,8 @@ def get_code_range(source, start, end):
 
 
 def get_code(source, node):
-    return source[node.start_byte:node.end_byte].decode("utf8")
+    return get_code_range(source, node.start_byte, node.end_byte)
+
 
 
 def main():
