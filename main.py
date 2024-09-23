@@ -82,14 +82,15 @@ def main():
     matches = query.matches(tree.root_node)
     switches = dict()
     for c, m in matches:
-        switch = get_code(code, m['value'][0]).strip('"')
+        sw_node = m['value'][0]
+        switch = get_code(code, sw_node).strip('"')
         variable = get_code(code, m['name'][0])
         switches[switch] = {'preproc': '',
                             'location': src,
-                            'description': '',
+                            'description': get_description(code, sw_node),
                             'variable': variable}
         if c == 1:
-            cond = get_code(code, m['cond'][0]).replace('\\\n', '')
+            cond = get_code(code, m['cond'][0]).replace("\\\n", "")
             switches[switch]['preproc'] = cond
     for k, v in switches.items():
         print(f"--{k},{v['variable']},{v['preproc']},{v['location']}")
