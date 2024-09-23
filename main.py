@@ -60,6 +60,18 @@ def get_code(source, node):
     return get_code_range(source, node.start_byte, node.end_byte)
 
 
+def get_description(source, node):
+    npc = node.parent.parent.prev_sibling
+    st = []
+    while npc is not None and npc.type == "comment":
+        if get_code(source, npc).startswith("//"):
+            st.append(npc)
+            npc = npc.prev_sibling
+    if st:
+        coms = get_code_range(source, st[-1].start_byte, st[0].end_byte)
+        return coms.split("\n\n").pop().replace("//", "").replace("\n", " ")
+    return ""
+
 
 def main():
     parser = Parser(CPP_LANGUAGE)
