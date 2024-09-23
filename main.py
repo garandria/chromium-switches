@@ -92,9 +92,10 @@ def main():
         if c == 1:
             cond = get_code(code, m['cond'][0]).replace("\\\n", "")
             switches[switch]['preproc'] = cond
+    print("| switch | description | variable | cpp condition | location |")
+    print("| ------ | ----------- | -------- | ------------- | -------- |")
     for k, v in switches.items():
-        print(f"--{k},{v['variable']},{v['preproc']},{v['location']}")
-
+        print(f"| --{k} | {v['description']} | {v['variable']} | {v['preproc']} | {v['location']} |")
 
 if __name__ == "__main__":
     main()
