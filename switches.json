@@ -1,15 +1,15 @@
 {
     "0": {
         "preproc": "",
-        "location": "../chromium/src/third_party/blink/common/switches.cc",
+        "location": "../chromium/src/components/nacl/common/nacl_switches.cc",
         "description": "",
-        "variable": "kIntensiveWakeUpThrottlingPolicy_ForceDisable"
+        "variable": "kVerboseLoggingInNaclChoiceDisabled"
     },
     "1": {
         "preproc": "",
-        "location": "../chromium/src/third_party/blink/common/switches.cc",
+        "location": "../chromium/src/components/nacl/common/nacl_switches.cc",
         "description": "",
-        "variable": "kIntensiveWakeUpThrottlingPolicy_ForceEnable"
+        "variable": "kVerboseLoggingInNaclChoiceLow"
     },
     "2": {
         "preproc": "",
@@ -961,9 +961,9 @@
     },
     "browser-test": {
         "preproc": "",
-        "location": "../chromium/src/content/public/common/content_switches.cc",
-        "description": " Tells whether the code is running browser tests (this changes the startup URL  used by the content shell and also disables features that can make tests  flaky [like monitoring of memory pressure]).",
-        "variable": "kBrowserTest"
+        "location": "../chromium/src/chrome/common/chrome_switches.cc",
+        "description": " Browser test mode for the |kStartStackProfiler| switch. Limits the profile  durations to be significantly less than the test timeout. On ChromeOS,  forces the stack sampling profiler to run on all processes as well.",
+        "variable": "kStartStackProfilerBrowserTest"
     },
     "browser-ui-tests-verify-pixels": {
         "preproc": "",
@@ -1200,10 +1200,10 @@
         "variable": "kClearTokenService"
     },
     "code-sign-clone-cleanup": {
-        "preproc": "",
-        "location": "../chromium/src/sandbox/policy/switches.cc",
-        "description": "",
-        "variable": "kCodeSignCloneCleanupProcessType"
+        "preproc": "BUILDFLAG(IS_MAC)",
+        "location": "../chromium/src/chrome/common/chrome_switches.cc",
+        "description": " A process type (switches::kProcessType) that cleans up the browser's  temporary code sign clone.",
+        "variable": "kCodeSignCloneCleanupProcess"
     },
     "compensate-for-unstable-pinch-zoom": {
         "preproc": "",
@@ -1993,7 +1993,7 @@
     },
     "disable-composited-antialiasing": {
         "preproc": "",
-        "location": "../chromium/src/ui/base/ui_base_switches.cc",
+        "location": "../chromium/src/cc/base/switches.cc",
         "description": " Disables layer-edge anti-aliasing in the compositor.",
         "variable": "kDisableCompositedAntialiasing"
     },
@@ -3529,9 +3529,9 @@
     },
     "enable-gpu-service-logging": {
         "preproc": "",
-        "location": "../chromium/src/ui/gl/gl_switches.cc",
-        "description": " Turns on GPU logging (debug build only).",
-        "variable": "kEnableGPUServiceLogging"
+        "location": "../chromium/src/gpu/command_buffer/service/gpu_switches.cc",
+        "description": " Enable GPU service logging. Note: This is the same switch as the one in  gl_switches.cc. It's defined here again to avoid dependencies between  dlls.",
+        "variable": "kEnableGPUServiceLoggingGPU"
     },
     "enable-gpu-service-tracing": {
         "preproc": "",
@@ -5303,12 +5303,6 @@
         "description": " Run in headless mode, i.e., without a UI or display server dependencies.",
         "variable": "kHeadless"
     },
-    "heildphpnddilhkemkielfhnkaagiabh": {
-        "preproc": "",
-        "location": "../chromium/src/chrome/browser/browser_switcher/browser_switcher_policy_migrator.cc",
-        "description": " namespace",
-        "variable": "kLBSExtensionId"
-    },
     "help": {
         "preproc": "BUILDFLAG(IS_POSIX) && !BUILDFLAG(IS_MAC) && !BUILDFLAG(IS_CHROMEOS_ASH)",
         "location": "../chromium/src/chrome/common/chrome_switches.cc",
@@ -6145,8 +6139,8 @@
     },
     "nacl-loader": {
         "preproc": "",
-        "location": "../chromium/src/sandbox/policy/switches.cc",
-        "description": "",
+        "location": "../chromium/src/components/nacl/common/nacl_switches.cc",
+        "description": " Value for --type that causes the process to run as a NativeClient loader  for SFI mode.",
         "variable": "kNaClLoaderProcess"
     },
     "native": {
@@ -7164,10 +7158,10 @@
         "variable": "kRegulatoryLabelDir"
     },
     "relauncher": {
-        "preproc": "",
-        "location": "../chromium/src/sandbox/policy/switches.cc",
-        "description": "",
-        "variable": "kRelauncherProcessType"
+        "preproc": "BUILDFLAG(IS_MAC)",
+        "location": "../chromium/src/chrome/common/chrome_switches.cc",
+        "description": " A process type (switches::kProcessType) that relaunches the browser. See  chrome/browser/mac/relauncher.h.",
+        "variable": "kRelauncherProcess"
     },
     "remote-allow-origins": {
         "preproc": "",
