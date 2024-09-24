@@ -96,7 +96,6 @@ def switches_from_file(filepath):
     return switches
 
 
-
 def main():
     params = list(set(sys.argv[1:]))
     switches = dict()
