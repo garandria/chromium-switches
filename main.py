@@ -102,6 +102,6 @@ def main():
     for p in params:
         switches.update(switches_from_file(p))
     with open("switches.json", "w") as out_stream:
-        out_stream.write(json.dumps(dict(sorted(switches.items()))))
+        json.dump(dict(sorted(switches.items())), out_stream, indent=4)
 if __name__ == "__main__":
     main()
