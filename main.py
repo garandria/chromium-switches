@@ -1,6 +1,7 @@
 import sys
 import tree_sitter_cpp as tscpp
 from tree_sitter import Language, Parser
+import json
 
 
 CPP_LANGUAGE = Language(tscpp.language())
@@ -95,5 +96,13 @@ def switches_from_file(filepath):
     return switches
 
 
+
+def main():
+    params = list(set(sys.argv[1:]))
+    switches = dict()
+    for p in params:
+        switches.update(switches_from_file(p))
+    with open("switches.json", "w") as out_stream:
+        out_stream.write(json.dumps(switches))
 if __name__ == "__main__":
     main()
