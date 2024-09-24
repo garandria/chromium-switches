@@ -1,0 +1,18 @@
+
+* Get the code of Chromium: https://www.chromium.org/developers/how-tos/get-the-code/
+* Install requirements.txt:
+  pip install -r requirements.txt
+* Run the program:
+  python3 main.py $(find /path/to/chromium/source -type f -name "*switches.cc")
+* Check the generated json file (e.g., with jq https://jqlang.github.io/jq/)
+  jq . switches.json | head
+    {
+      "0": {
+	"preproc": "",
+	"location": "../chromium/src/components/nacl/common/nacl_switches.cc",
+	"description": "",
+	"variable": "kVerboseLoggingInNaclChoiceDisabled"
+      },
+      "1": {
+	"preproc": "",
+	"location": "../chromium/src/components/nacl/common/nacl_switches.cc",
