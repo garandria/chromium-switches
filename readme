@@ -16,3 +16,11 @@
       "1": {
 	"preproc": "",
 	"location": "../chromium/src/components/nacl/common/nacl_switches.cc",
+
+  jq '."hardware-video-decode-framerate"' switches.json
+    {
+      "preproc": "BUILDFLAG(USE_CHROMEOS_MEDIA_ACCELERATION)",
+      "location": "../chromium/src/media/base/media_switches.cc",
+      "description": " Some (Qualcomm only at the moment) V4L2 video decoders require setting the  framerate so that the hardware decoder can scale the clocks efficiently.  This provides a mechanism during testing to lock the decoder framerate  to a specific value.",
+      "variable": "kHardwareVideoDecodeFrameRate"
+    }
