@@ -73,9 +73,9 @@ def get_description(source, node):
     return ""
 
 
-def main():
+def switches_from_file(filepath):
     parser = Parser(CPP_LANGUAGE)
-    src = sys.argv[1]
+    src = filepath
     code = file2bytes(src)
     tree = parser.parse(code)
     query = CPP_LANGUAGE.query(QUERY)
@@ -92,8 +92,8 @@ def main():
         if c == 1:
             cond = get_code(code, m['cond'][0]).replace("\\\n", "")
             switches[switch]['preproc'] = cond
-    for k, v in switches.items():
-        print(f"| --{k} | {v['description']} | {v['variable']} | {v['preproc']} | {v['location']} |")
+    return switches
+
 
 if __name__ == "__main__":
     main()
