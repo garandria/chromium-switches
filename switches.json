@@ -1,15 +1,15 @@
 {
     "0": {
         "preproc": "",
-        "location": "../chromium/src/components/nacl/common/nacl_switches.cc",
+        "location": "../chromium/src/third_party/blink/common/switches.cc",
         "description": "",
-        "variable": "kVerboseLoggingInNaclChoiceDisabled"
+        "variable": "kIntensiveWakeUpThrottlingPolicy_ForceDisable"
     },
     "1": {
         "preproc": "",
-        "location": "../chromium/src/components/nacl/common/nacl_switches.cc",
+        "location": "../chromium/src/third_party/blink/common/switches.cc",
         "description": "",
-        "variable": "kVerboseLoggingInNaclChoiceLow"
+        "variable": "kIntensiveWakeUpThrottlingPolicy_ForceEnable"
     },
     "2": {
         "preproc": "",
@@ -787,9 +787,9 @@
     },
     "auto": {
         "preproc": "",
-        "location": "../chromium/src/ui/base/ui_base_switches.cc",
-        "description": "",
-        "variable": "kTopChromeTouchUiAuto"
+        "location": "../chromium/src/content/public/common/content_switches.cc",
+        "description": " The values the kTouchEventFeatureDetection switch may have, as in  --touch-events=disabled.    auto: enabled at startup when an attached touchscreen is present.",
+        "variable": "kTouchEventFeatureDetectionAuto"
     },
     "auto-accept-camera-and-microphone-capture": {
         "preproc": "",
@@ -3001,9 +3001,9 @@
     },
     "disabled": {
         "preproc": "",
-        "location": "../chromium/src/ui/base/ui_base_switches.cc",
-        "description": "",
-        "variable": "kTopChromeTouchUiDisabled"
+        "location": "../chromium/src/content/public/common/content_switches.cc",
+        "description": "   disabled: touch events are disabled.",
+        "variable": "kTouchEventFeatureDetectionDisabled"
     },
     "disallow-lacros": {
         "preproc": "",
@@ -4171,9 +4171,9 @@
     },
     "enabled": {
         "preproc": "",
-        "location": "../chromium/src/ui/base/ui_base_switches.cc",
-        "description": "",
-        "variable": "kTopChromeTouchUiEnabled"
+        "location": "../chromium/src/content/public/common/content_switches.cc",
+        "description": "   enabled: touch events always enabled.",
+        "variable": "kTouchEventFeatureDetectionEnabled"
     },
     "encode-binary": {
         "preproc": "",
@@ -4662,9 +4662,9 @@
         "variable": "kAshForceEnableStylusTools"
     },
     "force-fieldtrial-params": {
-        "preproc": "",
-        "location": "../chromium/src/components/variations/variations_switches.cc",
-        "description": " This option can be used to force parameters of field trials when testing  changes locally. The argument is a param list of (key, value) pairs prefixed  by an associated (trial, group) pair. You specify the param list for multiple  (trial, group) pairs with a comma separator.  Example:    \"Trial1.Group1:k1/v1/k2/v2,Trial2.Group2:k3/v3/k4/v4\"  Trial names, groups names, parameter names, and value should all be URL  escaped for all non-alphanumeric characters.",
+        "preproc": "BUILDFLAG(IS_ANDROID)",
+        "location": "../chromium/src/base/base_switches.cc",
+        "description": " The field trial parameters and their values when testing changes locally.",
         "variable": "kForceFieldTrialParams"
     },
     "force-fieldtrials": {
@@ -5485,8 +5485,8 @@
     },
     "incognito": {
         "preproc": "",
-        "location": "../chromium/src/fuchsia_web/webengine/switches.cc",
-        "description": "",
+        "location": "../chromium/src/chrome/common/chrome_switches.cc",
+        "description": " Causes the initial browser opened to be in incognito mode. Further browsers  may or may not be in incognito mode; see `IncognitoModePrefs`.",
         "variable": "kIncognito"
     },
     "inherit-ipcz-broker": {
@@ -7015,8 +7015,8 @@
     },
     "proxy-bypass-list": {
         "preproc": "",
-        "location": "../chromium/src/fuchsia_web/webengine/switches.cc",
-        "description": "",
+        "location": "../chromium/src/chrome/common/chrome_switches.cc",
+        "description": " Specifies a list of hosts for whom we bypass proxy settings and use direct  connections. Ignored if --proxy-auto-detect or --no-proxy-server are also  specified. This is a comma-separated list of bypass rules. See:  \"net/proxy_resolution/proxy_bypass_rules.h\" for the format of these rules.",
         "variable": "kProxyBypassList"
     },
     "proxy-pac-url": {
@@ -7027,8 +7027,8 @@
     },
     "proxy-server": {
         "preproc": "",
-        "location": "../chromium/src/fuchsia_web/webengine/switches.cc",
-        "description": "",
+        "location": "../chromium/src/chrome/common/chrome_switches.cc",
+        "description": " Uses a specified proxy server, overrides system settings.",
         "variable": "kProxyServer"
     },
     "proxy_resolver_win": {
@@ -8263,8 +8263,8 @@
     },
     "type": {
         "preproc": "",
-        "location": "../chromium/src/content/public/common/content_switches.cc",
-        "description": " The value of this switch determines whether the process is started as a  renderer or plugin host.  If it's empty, it's the browser.",
+        "location": "../chromium/src/sandbox/policy/switches.cc",
+        "description": " Flags spied upon from other layers.",
         "variable": "kProcessType"
     },
     "ui-disable-partial-swap": {
